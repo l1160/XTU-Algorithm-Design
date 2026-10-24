@@ -1,0 +1,26 @@
+{
+  "stage": "spacing_repair_policy_confirmation",
+  "protocol": "repair_ablation_plan_large_scale.json",
+  "output": "D:\\suanfa\\windfarm_delivery\\results\\repair_large_campaign",
+  "cases": [{"scenario":"obs_01", "candidates":1600, "turbines":400}],
+  "variants": ["LM_none", "LM_greedy", "LM_backtrack", "DGEA_none", "DGEA_greedy", "DGEA_backtrack"],
+  "variant_definitions": {
+    "LM_none": {"method":"LMOCSO", "repair_mode":"none"},
+    "LM_greedy": {"method":"LMOCSO", "repair_mode":"greedy"},
+    "LM_backtrack": {"method":"LMOCSO", "repair_mode":"bounded_backtrack"},
+    "DGEA_none": {"method":"DGEA", "repair_mode":"none"},
+    "DGEA_greedy": {"method":"DGEA", "repair_mode":"greedy"},
+    "DGEA_backtrack": {"method":"DGEA", "repair_mode":"bounded_backtrack"}
+  },
+  "seeds": [601,602,603,604,605,606,607,608,609,610],
+  "population": 100,
+  "evaluations": 10000,
+  "checkpoint_requests": 250,
+  "workers": 4,
+  "blas_threads": 1,
+  "paired_contrasts": [["LM_greedy","LM_none"],["LM_backtrack","LM_greedy"],["DGEA_greedy","DGEA_none"],["DGEA_backtrack","DGEA_greedy"]],
+  "normalization": "Common pooled all-visited feasible objective bounds over these 60 runs only; HV reference [1.1,1.1,1.1]",
+  "statistics": "Exact paired two-sided sign-flip tests, 10 seeds, Holm family 4. Sign-exchangeability assumption. No comparison with NSGA-III.",
+  "initialization": "First 100 requests use identical bounded-backtrack repair in all modes; counted in budget; same returned keys/layouts/objectives verified across all six cells per seed",
+  "checkpoints": "Full last.pkl engine and RNG state. Preserve logs, resume existing state, no fresh restart when progress exists without checkpoint."
+}

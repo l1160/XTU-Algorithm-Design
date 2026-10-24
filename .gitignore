@@ -1,0 +1,15 @@
+.venv/
+__pycache__/
+*.py[cod]
+*.lock
+*.tmp
+*.log
+*.pkl
+.env
+.env.*
+.background/
+reproduced/
+verification/
+**/cache/
+.DS_Store
+Thumbs.db

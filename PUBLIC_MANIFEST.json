@@ -1,0 +1,678 @@
+[
+  {
+    "path": ".gitattributes",
+    "sha256": "75b961fe5d147c6e3d46f6ee641e05484dc8fbd0f43305a967b7d89725c3e7ba"
+  },
+  {
+    "path": ".gitignore",
+    "sha256": "be21d2b2e09383a83b16d358e4504677244a356a0c85a8d9fe6cc8a3d908e5c8"
+  },
+  {
+    "path": "README.md",
+    "sha256": "c82e5d19de3b47cbbc254e7d956e08e0c5ee4d68d17376b20a1d3b3037cad505"
+  },
+  {
+    "path": "Start-Reproduction.ps1",
+    "sha256": "941f33a5453528d6ebd6d203d8060b93343ead1286c5d35a7f97f0c6327e9b8c"
+  },
+  {
+    "path": "Start-TeamRun.ps1",
+    "sha256": "9b1ee5621bcddd1d1b3a2ebaacc905ce7eef18747fb6451a9aca61945386f1b4"
+  },
+  {
+    "path": "VERIFICATION.json",
+    "sha256": "cee43632ec041af5cd2fc9190daf15540929ca0107af16ff79b05a5f009c0023"
+  },
+  {
+    "path": "reference_results/repair/aggregate_metrics.csv",
+    "sha256": "2da9fbfbc9b97d46061f849d25a3caf691b3143c57e3f88154fb9a743acb994e"
+  },
+  {
+    "path": "reference_results/repair/convergence.csv",
+    "sha256": "4cffbecd63af4729cb7bcbf4760150e17760f38fa27d0757992c93d7a5fcd9f6"
+  },
+  {
+    "path": "reference_results/repair/independent_statistical_verification.csv",
+    "sha256": "17a9fc39906569faa8facc7209d8e5057b5c6d25651ea350938b936b1e10af95"
+  },
+  {
+    "path": "reference_results/repair/individual_paired_differences.csv",
+    "sha256": "9ab13ff43094cb0fe54687c6fff89ce5da81288d9bbd594e64b0c195a0e57a2c"
+  },
+  {
+    "path": "reference_results/repair/normalization.json",
+    "sha256": "03d27c9aa5c452c381d73e6933d30925377b775bc96a72004d1c7490fb34dea4"
+  },
+  {
+    "path": "reference_results/repair/paired_comparisons.csv",
+    "sha256": "fee92ed21c9264ae9cb2c12959632840a1a69a9a659076781d67b9ecb96e3818"
+  },
+  {
+    "path": "reference_results/repair/per_run_metrics.csv",
+    "sha256": "89aa0b4d8841d2246c03b63302100223126975cd6e3e9792a5475c86fbe1600e"
+  },
+  {
+    "path": "reference_results/repair/repair_diagnostics_aggregate.csv",
+    "sha256": "0eccb66efa877565a9737768c292ca8845c98799b78e7f58829c48deff6dad08"
+  },
+  {
+    "path": "reference_results/repair/repair_diagnostics_per_run.csv",
+    "sha256": "42384915efba77c02e672fec28a99388e84b4e90866e479bf3a4438dacd9d9d1"
+  },
+  {
+    "path": "reference_results/terrain/aggregate_metrics.csv",
+    "sha256": "d26b863bd794536ba4f2459b43f501ab8f47965c81265ce89a02bfce24f402db"
+  },
+  {
+    "path": "reference_results/terrain/convergence.csv",
+    "sha256": "e274b82d5e61904dbdf411aefe1e35fa0e4af68939f8245013e3cb60f34d92d1"
+  },
+  {
+    "path": "reference_results/terrain/individual_paired_differences.csv",
+    "sha256": "be4e2caeafc9b54ba6bbf0d6f2e885c1c97fe946b4587f68e2b4abf88bf2ae30"
+  },
+  {
+    "path": "reference_results/terrain/normalization.json",
+    "sha256": "d5dd120aed6f8e03baeb8cef5336903cae500ac883f7d3d329cdafda92e0a21c"
+  },
+  {
+    "path": "reference_results/terrain/paired_comparisons.csv",
+    "sha256": "bbbaf0241618cf4d0543edea7530fc6966925931ec676b0b82fc38a1b8389042"
+  },
+  {
+    "path": "reference_results/terrain/per_run_metrics.csv",
+    "sha256": "8148fec194a947bbdc210ff7acd80535dd917a466725859b5e6a61bc17b59301"
+  },
+  {
+    "path": "reference_results/terrain_layouts/obs_00_ridge_M1600_N400/representative_layouts.json",
+    "sha256": "70483f29fac492bd5b333f6e93041b8407672517674337e9d9602bc00afeedaf"
+  },
+  {
+    "path": "reference_results/terrain_layouts/obs_01_ridge_M1600_N400/representative_layouts.json",
+    "sha256": "d2ba0d974c72537a235db07eebe162f4ec33d1a695f9ea765b223d6047ba6d02"
+  },
+  {
+    "path": "reproduce.py",
+    "sha256": "5eb98634a310baec7027f9ebaf8f409d824cd46bc8d25ad618c82f5f614e4315"
+  },
+  {
+    "path": "requirements.txt",
+    "sha256": "95b625b6fe3129e444a5dd6ce575eb85b14a2316bad2ef13402c42ce76c93891"
+  },
+  {
+    "path": "requirements_research.txt",
+    "sha256": "95b625b6fe3129e444a5dd6ce575eb85b14a2316bad2ef13402c42ce76c93891"
+  },
+  {
+    "path": "team.py",
+    "sha256": "d97c1274a87bbbbe4d8d3f34e624de405938280967294a1628c91588937aa1e3"
+  },
+  {
+    "path": "verification_fixtures/flat/obs_00_M1600_N400_CCwake_base_s301/evaluations.npz",
+    "sha256": "9a5ec50286db83c08128f9720355d476faba4cf90c94ef06fa40b44e9c4eccdf"
+  },
+  {
+    "path": "verification_fixtures/flat/obs_00_M800_N400_CCwake_base_s301/evaluations.npz",
+    "sha256": "46382e47a8ad5172e5b8c796ad1e80b12c2da17fa66e4a605a191ac0f65161d0"
+  },
+  {
+    "path": "verification_fixtures/flat/obs_01_M1600_N400_CCwake_base_s301/evaluations.npz",
+    "sha256": "5101b69bff9fd15474c7e0d95dc369815f36d6085737076295bdc0b65b6045ea"
+  },
+  {
+    "path": "verification_fixtures/flat/obs_01_M800_N400_CCwake_base_s301/evaluations.npz",
+    "sha256": "f0c6dae2683e00079228a8a7110c3f70a582ed5edc377cded32b860376ca8f15"
+  },
+  {
+    "path": "verify_public.py",
+    "sha256": "55fa60558ee4d4f5b35f517cb1b4bdd13d51307f023abd59bad12335c45d4748"
+  },
+  {
+    "path": "windfarm_delivery/campaign_figures.py",
+    "sha256": "e3e1924a919e0a32e25c790d42ee77535dd510f9d18adb021fc24745424f3726"
+  },
+  {
+    "path": "windfarm_delivery/cc_contract_audit.py",
+    "sha256": "2117564c20e80d0b3175a26d96cb8e4ae7c117bc021933287d1dd74ce66ab3d6"
+  },
+  {
+    "path": "windfarm_delivery/confirmation_budget_diagnostics.py",
+    "sha256": "934221c1b69dd53255b8b6dcff8b6365238985e87bd8a811b770c6d4e9dca699"
+  },
+  {
+    "path": "windfarm_delivery/confirmation_metric_review.py",
+    "sha256": "4e59a57b04961a73bb6287ebac526ad520e658959c070863cd8340da0e6f26bd"
+  },
+  {
+    "path": "windfarm_delivery/encoding_replay.py",
+    "sha256": "ca008c0b5a3561a20e0a826a8fb46d75de82d4e24b2c810b0b618b7385641bf4"
+  },
+  {
+    "path": "windfarm_delivery/launch.py",
+    "sha256": "0da1c71c7505c91ac0ecb1cd2509a1163bf3d1de6d2dca81f04732ebb3077ccc"
+  },
+  {
+    "path": "windfarm_delivery/objective_witnesses.py",
+    "sha256": "81cc0943078dec122a7cddc0f0cb7f2af15b6d129b3235112b71cfe6239b3007"
+  },
+  {
+    "path": "windfarm_delivery/repair_ablation_large_model.py",
+    "sha256": "97e4e2bfc3c740f4d689f24d9db2ee01461ebc9dc21049cd998b78148f7def42"
+  },
+  {
+    "path": "windfarm_delivery/repair_ablation_model.py",
+    "sha256": "8773770e837c30f859d6c059230e7be54f89b0a91d68e53d20cd5e687acb3d4f"
+  },
+  {
+    "path": "windfarm_delivery/repair_ablation_plan_large_scale.json",
+    "sha256": "a00a14cda4614e5cd1dfcfe21a1d6d8f2346bd628cc148174db038cd369f7663"
+  },
+  {
+    "path": "windfarm_delivery/repair_large_analysis.py",
+    "sha256": "cb04a61c3d50181ca2d8c22462d37675f9e29e4936e312be7b1b4a1aa3fd7f72"
+  },
+  {
+    "path": "windfarm_delivery/repair_large_campaign.py",
+    "sha256": "007501572a8a177ac56f0c26c76a66e6414b84b6a16eeecdb211de8aa7434017"
+  },
+  {
+    "path": "windfarm_delivery/repair_large_config.json",
+    "sha256": "27c84d0c045e02db3fe7f6f2f42191a1435aff9c664ae6e8db4d345990c144ab"
+  },
+  {
+    "path": "windfarm_delivery/repair_large_preflight.py",
+    "sha256": "660a1db91023f798751f5e9bc0d8fa929fbb541fc7b14057285921f895e0f2c5"
+  },
+  {
+    "path": "windfarm_delivery/replay_analysis.py",
+    "sha256": "8199e7c3cc8bdd0987511f009b57ea21af219c36b807a5b77f861a032e619408"
+  },
+  {
+    "path": "windfarm_delivery/research_scope_20261021.json",
+    "sha256": "417b5093b0103910635fe8d7f9ad07668f074260d1a682781ad8815ce5672329"
+  },
+  {
+    "path": "windfarm_delivery/results/repair_large_preflight/DONE.json",
+    "sha256": "007d995d03dfc52cc1067fbadb87b64db943421911b79adf0c98e572e10cea75"
+  },
+  {
+    "path": "windfarm_delivery/results/terrain_large_preflight/DONE.json",
+    "sha256": "23908d2fa25ee61377dd5bf8e28da83a56cea2b54491b60787b4add8456b4d14"
+  },
+  {
+    "path": "windfarm_delivery/scene_coverage.py",
+    "sha256": "d075c7dbbbf957a33b591eca2d24b341a82da20210865c1cbce7947f425d5e65"
+  },
+  {
+    "path": "windfarm_delivery/terrain_controls.py",
+    "sha256": "a3817aa60d9fbad114e4408959dafc18d23e8ea9acdf881faa0b466caec66a30"
+  },
+  {
+    "path": "windfarm_delivery/terrain_descriptive.py",
+    "sha256": "a09d90c8ea22ae0fa50c365cb4079164a3b453974fb3cee5df6ba35f92c4ee7b"
+  },
+  {
+    "path": "windfarm_delivery/terrain_large_analysis.py",
+    "sha256": "2f4935187aef6254532768c44a183a0b95f73d9980da0574ec66500a038200ee"
+  },
+  {
+    "path": "windfarm_delivery/terrain_large_campaign.py",
+    "sha256": "86ace27dda443c07db4631e050607859f058cdbd32e544bdd12d785f447c6ebc"
+  },
+  {
+    "path": "windfarm_delivery/terrain_large_model.py",
+    "sha256": "455f8f72ab9a09f84862e107448abebbafeb482b4fd76997262fb18bdacea5a5"
+  },
+  {
+    "path": "windfarm_delivery/terrain_large_plan.json",
+    "sha256": "c85336ec2c57276927667ce7d74c2ae7ae5ec5ff7ab3e90b2c874694503e680e"
+  },
+  {
+    "path": "windfarm_delivery/terrain_large_preflight.py",
+    "sha256": "d5bc799b3d92525837bc6b955e920c55ed5879a04e602023a4516b4318c96966"
+  },
+  {
+    "path": "windfarm_delivery/terrain_layouts_verified.py",
+    "sha256": "fd36c003965a8cd6b4503ce11d763dd4713e9b361488e3c572f8c6f1a082c625"
+  },
+  {
+    "path": "windfarm_research_v4/analyze_pilot.py",
+    "sha256": "ca5170dfa2d145157483dccdfbc5a7601895566a9b0da7ef8b4a96aa11b87932"
+  },
+  {
+    "path": "windfarm_research_v4/audit.py",
+    "sha256": "bf3747328871ab11a6f849c438a9de7b2698a2b6d5cf7b9669d465035aed7d27"
+  },
+  {
+    "path": "windfarm_research_v4/bootstrap_v4.py",
+    "sha256": "cf6627864838002a890a47776f6bfb72b0457d1b50f3057b4b59fcb9c2972468"
+  },
+  {
+    "path": "windfarm_research_v4/launch.py",
+    "sha256": "3975c3d8513b2c8dcae76e5af07d660ba5dea59392c65e64b19b31686f3cdbad"
+  },
+  {
+    "path": "windfarm_research_v4/model_v4.py",
+    "sha256": "7fac360d15c1c22447e781511a15bdf98148306516bd5eb95de9ac87038a02e5"
+  },
+  {
+    "path": "windfarm_research_v4/pilot.py",
+    "sha256": "b16ab41a7e73bcaefecf09774c32666dd06eec2ae85e889f0b79ec79f57b6949"
+  },
+  {
+    "path": "windfarm_research_v4/pilot_config.json",
+    "sha256": "0e27a969d301cde48b25b8c1e2a4c9f456148523768044f9b6b3833726a2decf"
+  },
+  {
+    "path": "windfarm_research_v4/posthoc/confirm.py",
+    "sha256": "40a51ca016a57575b2e464822b232acad2368b5791c50010bc962397cce55421"
+  },
+  {
+    "path": "windfarm_research_v4/posthoc/confirm_analysis.py",
+    "sha256": "78c3de7d2b49eb4c3cd1f750214fe66eda2f5db322c6d44311e01fd65dda3c52"
+  },
+  {
+    "path": "windfarm_research_v4/posthoc/confirm_variants.py",
+    "sha256": "2983fcd3a6bb25defc004c8abf7056aae6095292df12b5fe2e31fea05427880e"
+  },
+  {
+    "path": "windfarm_research_v4/posthoc/confirmation_config.json",
+    "sha256": "51a1de70b3ce5418fb06672ff30c212ccb557fa0b08608714f1859173bab1b8b"
+  },
+  {
+    "path": "windfarm_research_v4/preflight.py",
+    "sha256": "23e242d274ba6212571ff71b92feffbd1c797513f77cc464db404ba644ecfd4f"
+  },
+  {
+    "path": "windfarm_research_v4/variants.py",
+    "sha256": "b70bd0ab0b1f886456034d9f1cd7b41dfbcd8f4cb4a62e1a4aa53b75147ea757"
+  },
+  {
+    "path": "windfarm_study_v3/algorithms.py",
+    "sha256": "7beed0fc30215d5241ceea8b0237b38fe0961e64ab37e29f2e289b64d9ed778d"
+  },
+  {
+    "path": "windfarm_study_v3/bootstrap.py",
+    "sha256": "9a28b729f25c5dd1016ca54f605282f1a281a3c0e30d3abe8b119a6931d61822"
+  },
+  {
+    "path": "windfarm_study_v3/economics.json",
+    "sha256": "153c2ee980c4afc43dca17216070bf27eb9f9fbbaac3796a481fd656fae64dcd"
+  },
+  {
+    "path": "windfarm_study_v3/fast_audit.py",
+    "sha256": "e2b29f0f37d1c4687df58fd2ef90aa9bdef905432f98a8fb0b2832ec4c8871b6"
+  },
+  {
+    "path": "windfarm_study_v3/launch.py",
+    "sha256": "1a594ea46670863da15bf2086a9dcec3233dc8985a31c16f66dad6d25ce572c6"
+  },
+  {
+    "path": "windfarm_study_v3/model.py",
+    "sha256": "9a2498c5da8007caeb7152f7e980317e908b18137b0d6b2a6a1f26df3f60611b"
+  },
+  {
+    "path": "windfarm_study_v3/physical.py",
+    "sha256": "dc3f86b4879e443c21b862926cb801d35d3031d819dcf857e2c888fb935cbe55"
+  },
+  {
+    "path": "windfarm_study_v3/reference/ATTRIBUTION.txt",
+    "sha256": "8bf555eb8c42e288dc751de671915adba0f75a4594cdfc83e29905d43f2f32cb"
+  },
+  {
+    "path": "windfarm_study_v3/reference/CCGDE3/CCDE.m",
+    "sha256": "56750b014779ae8cd1cebcd68d833863d4b9fbe043f49382f7a1e3fa2b7d5b24"
+  },
+  {
+    "path": "windfarm_study_v3/reference/CCGDE3/CCGDE3.m",
+    "sha256": "6f2ad2609ea8a35bfe149176e7b98d94471804c7e725fba4c434d31122762264"
+  },
+  {
+    "path": "windfarm_study_v3/reference/CCGDE3/EnvironmentalSelection.m",
+    "sha256": "21feb241565d0ce8e392993e3d93ece1fb7d8bfb4a05e6ac45150b50a8673d6c"
+  },
+  {
+    "path": "windfarm_study_v3/reference/CCGDE3/GDE3_EnvironmentalSelection.m",
+    "sha256": "759edcee627ef8423f54654574c058e2e981f3bd5788447d404b76d1ef457ea8"
+  },
+  {
+    "path": "windfarm_study_v3/reference/DGEA/DGEA.m",
+    "sha256": "6efe69768f648c745acf318c138e7a82a93c50a20e4da735abc27d45dd6463e8"
+  },
+  {
+    "path": "windfarm_study_v3/reference/DGEA/DirectionReproduction.m",
+    "sha256": "4075f5578360d33466782a4c04bfd61affe8dc83db91d2187ace97e4e05700fa"
+  },
+  {
+    "path": "windfarm_study_v3/reference/DGEA/PreSelection.m",
+    "sha256": "85ea3a9417839d33b1434e4aa3ee371b2b11e4b9b64822c2cd925d7e6086fa99"
+  },
+  {
+    "path": "windfarm_study_v3/reference/DGEA/subIBEA.m",
+    "sha256": "010a218b9003ae86fb3f9723ce4c4af28cd2d6192066e11fd2e8fe82d69cbae9"
+  },
+  {
+    "path": "windfarm_study_v3/reference/DGEA/subNSGAII.m",
+    "sha256": "6e86d46abbb6eaa94fe44c6e281a389922715e039636242f823e0fcc6b5222ad"
+  },
+  {
+    "path": "windfarm_study_v3/reference/DGEA/subNSGAIII.m",
+    "sha256": "db551042bda9433c58c2b75f4996a8a7bb006e80bfc2a385e67c092eea6aa1c7"
+  },
+  {
+    "path": "windfarm_study_v3/reference/DGEA/subRVEA.m",
+    "sha256": "16aaaf10f3e8ae8631bdcd4336cd6501890552ce2e033dd75699699ecfd4bd58"
+  },
+  {
+    "path": "windfarm_study_v3/reference/DGEA/subSPEA2.m",
+    "sha256": "f142541b5ea9dbe0e4663ae362efc9459b5363406b5f74956b3a368c28da0505"
+  },
+  {
+    "path": "windfarm_study_v3/reference/LMOCSO/EnvironmentalSelection.m",
+    "sha256": "7b8697a76b8c67d09b492e927464e16a491f07a148f64440fbe5717d23007865"
+  },
+  {
+    "path": "windfarm_study_v3/reference/LMOCSO/LMOCSO.m",
+    "sha256": "e50dbd3bb0ff4c54e12ebde63b96a8a7529af8a33c046a60b4b8aa6cfb3cf898"
+  },
+  {
+    "path": "windfarm_study_v3/reference/LMOCSO/Operator.m",
+    "sha256": "e131bad1e70ffa665753de2b009a1c85ae6973ff967adcf32933628b51653955"
+  },
+  {
+    "path": "windfarm_study_v3/reference/SOURCE.json",
+    "sha256": "0b53ba7f5c87925de561e5a53aa9203a7303d7175d9867e8aab458cf3d5322ff"
+  },
+  {
+    "path": "windfarm_terrain_v5/bootstrap_v5.py",
+    "sha256": "8b42843205a845500bfb99cead364cdb3ec1107f41348b826d24904770fb120c"
+  },
+  {
+    "path": "windfarm_terrain_v5/data/flat_100m/dem.npz",
+    "sha256": "4157410822ca1cd1540184f8755d75555652a87c1380aab5186d6df558a128d7"
+  },
+  {
+    "path": "windfarm_terrain_v5/data/flat_100m/elevation_local.asc",
+    "sha256": "d69baad01777152c536f94c75113bb501bebdd8a1e2bc88f3d59b7bf7b8ea0cb"
+  },
+  {
+    "path": "windfarm_terrain_v5/data/flat_100m/metadata.json",
+    "sha256": "1603b9c1920ef26abfcf85460cfb10936b48ccf3740b95f2bbbf710af776e679"
+  },
+  {
+    "path": "windfarm_terrain_v5/data/flat_25m/dem.npz",
+    "sha256": "54a2acf35f6241d013e871426196c777f9efc031b87a873fc45b2f77aa5d81a6"
+  },
+  {
+    "path": "windfarm_terrain_v5/data/flat_25m/elevation_local.asc",
+    "sha256": "908f41f8fba98f11a97ec35071bfa7bd430dbdb203be068750a0fb39e4958538"
+  },
+  {
+    "path": "windfarm_terrain_v5/data/flat_25m/metadata.json",
+    "sha256": "5013fe7d13c5ecef396826c85ef43b6269eec72df1cb61b7ca20618e83dcc7bb"
+  },
+  {
+    "path": "windfarm_terrain_v5/data/flat_50m/candidates_M1600.npy",
+    "sha256": "129de2340f7d2635bf98933a3d894387b5f2f4ce56c6f88e354ce0c40ecfcd63"
+  },
+  {
+    "path": "windfarm_terrain_v5/data/flat_50m/candidates_M800.npy",
+    "sha256": "4f3a938eecd53df44d349dbbead28c70b7ffb43c7b7fe916b3e4b7b59cf4d965"
+  },
+  {
+    "path": "windfarm_terrain_v5/data/flat_50m/dem.npz",
+    "sha256": "ad85903fa860324a7169de21860f1ccbc24c8f6fa453960e4a1dd8fd12052253"
+  },
+  {
+    "path": "windfarm_terrain_v5/data/flat_50m/elevation_local.asc",
+    "sha256": "a80ea4c7907f73cbf50a5f80e3d4779403e4cb8802d984ed98c016c8faddf192"
+  },
+  {
+    "path": "windfarm_terrain_v5/data/flat_50m/metadata.json",
+    "sha256": "983e4ee9c74592834f0e8dad6919c7cdf3ab9c3e167d1a3c5ac83b70e41e7177"
+  },
+  {
+    "path": "windfarm_terrain_v5/data/ridge_100m/dem.npz",
+    "sha256": "045e4afac7d8f0dea5e2d9edad72dd000342da6c446d376e6b8e5d100f1fec69"
+  },
+  {
+    "path": "windfarm_terrain_v5/data/ridge_100m/elevation_local.asc",
+    "sha256": "76828d5e3390893ab995215924eaea7e4ef88ba893898eb0e305167c21c20f69"
+  },
+  {
+    "path": "windfarm_terrain_v5/data/ridge_100m/metadata.json",
+    "sha256": "286da430e9fc96348e73775830af7a963f6b945bb9e3ce771900e0885085abf3"
+  },
+  {
+    "path": "windfarm_terrain_v5/data/ridge_25m/dem.npz",
+    "sha256": "5e202a64cd6c13aa1b3d38d2f4ef9bd34be6277ab0d406c1da80d6c8dedc3adb"
+  },
+  {
+    "path": "windfarm_terrain_v5/data/ridge_25m/elevation_local.asc",
+    "sha256": "a308fcef206f3cbb32e0e1af7c5b1d3147dbb493be976a5b812f04c8b15ce0ce"
+  },
+  {
+    "path": "windfarm_terrain_v5/data/ridge_25m/metadata.json",
+    "sha256": "be879b7ff8e992b5d9061558d5fb111d2d9ac5dacf355b29e284645530154616"
+  },
+  {
+    "path": "windfarm_terrain_v5/data/ridge_50m/candidates_M1600.npy",
+    "sha256": "cdfb0f00f7b94f08afda1216767a748056df5fd0d9c5e12d3dee60d53b6aafa8"
+  },
+  {
+    "path": "windfarm_terrain_v5/data/ridge_50m/candidates_M800.npy",
+    "sha256": "6a588ace9fa3c0a74d6b444697acfcd8f2b15969ea1f4101927aa70d7dbaee85"
+  },
+  {
+    "path": "windfarm_terrain_v5/data/ridge_50m/dem.npz",
+    "sha256": "024e9964323f7ca13e0cfe0ad72716003520e338c8aacb4e4cb1027d9911ed80"
+  },
+  {
+    "path": "windfarm_terrain_v5/data/ridge_50m/elevation_local.asc",
+    "sha256": "18543895dfe2fc1c494694c35f3d504ebc35333f074807716b189b69869ad0da"
+  },
+  {
+    "path": "windfarm_terrain_v5/data/ridge_50m/metadata.json",
+    "sha256": "b32d16912d841e72f5a3fa5778675340d6fe24b2720ac4755452e9cc5965bc2c"
+  },
+  {
+    "path": "windfarm_terrain_v5/data/rolling_100m/dem.npz",
+    "sha256": "6a2e9bf420af2c552e64beeed380d392c69d407f68414fd68b6036a1cc0a5a86"
+  },
+  {
+    "path": "windfarm_terrain_v5/data/rolling_100m/elevation_local.asc",
+    "sha256": "b24a987d32b7b93732a610a4c9d872995ca22a0855a01016ddadc85a84b7cf44"
+  },
+  {
+    "path": "windfarm_terrain_v5/data/rolling_100m/metadata.json",
+    "sha256": "243a210743aabe71a7e41d1c7477b2e21ae4f8bc1a216546a9f003cb389330df"
+  },
+  {
+    "path": "windfarm_terrain_v5/data/rolling_25m/dem.npz",
+    "sha256": "0ab1ecfab424a97bb2698b27478470e6e49cb4663fa1c2d222f1e638e5cf1991"
+  },
+  {
+    "path": "windfarm_terrain_v5/data/rolling_25m/elevation_local.asc",
+    "sha256": "0a2a409782a85f7913b02e59bb25dff66e08b74f481765d01ad50de05c88527f"
+  },
+  {
+    "path": "windfarm_terrain_v5/data/rolling_25m/metadata.json",
+    "sha256": "cb6a2f9f825e257803f9e6f4b2c7311b647f213382ac1932c206a9b3a1584d88"
+  },
+  {
+    "path": "windfarm_terrain_v5/data/rolling_50m/candidates_M1600.npy",
+    "sha256": "129de2340f7d2635bf98933a3d894387b5f2f4ce56c6f88e354ce0c40ecfcd63"
+  },
+  {
+    "path": "windfarm_terrain_v5/data/rolling_50m/candidates_M800.npy",
+    "sha256": "4f3a938eecd53df44d349dbbead28c70b7ffb43c7b7fe916b3e4b7b59cf4d965"
+  },
+  {
+    "path": "windfarm_terrain_v5/data/rolling_50m/dem.npz",
+    "sha256": "c526af0dcaeb412c60e568f1f0aadf47f1cacfa5ba1c3add47dca02ca4e65740"
+  },
+  {
+    "path": "windfarm_terrain_v5/data/rolling_50m/elevation_local.asc",
+    "sha256": "29e09f1a57c625fcffacd94143c8f946d8acf8a269a1f7f7dcf2fc6dbea3a87d"
+  },
+  {
+    "path": "windfarm_terrain_v5/data/rolling_50m/metadata.json",
+    "sha256": "74092ecc1f015de4980fb621ee99f0aebd8f91210bc317244c1864fd6e6b4ec9"
+  },
+  {
+    "path": "windfarm_terrain_v5/geometry.py",
+    "sha256": "42cf0ede49a8dc98229fa341b5064741d7c4d980f328e82e4156ebd30dc684da"
+  },
+  {
+    "path": "windfarm_terrain_v5/launch.py",
+    "sha256": "647af6ee329e21c0c8db675cc43df85787927974db13e91560824f2fdbd74805"
+  },
+  {
+    "path": "windfarm_terrain_v5/model_terrain.py",
+    "sha256": "9f0f05cfbc168d69cb0e22016fb3cb4685a7207d469dad6edf48633c4bc79c80"
+  },
+  {
+    "path": "windfarm_terrain_v5/results/terrain_audit/surface_quadrature_orders.json",
+    "sha256": "a9b16fb09b4325ef4d57d6690d22329fe78d5fc49a1acbb1786a1be57c8c810e"
+  },
+  {
+    "path": "windfarm_terrain_v5/terrain.py",
+    "sha256": "61a597fc73ea4dd444ebf34e69e6ca1afeb39674617b196dfabc9c891b6e5bae"
+  },
+  {
+    "path": "windfarm_terrain_v5/terrain_analysis.py",
+    "sha256": "af7adf07619729a62d5d03e841941a84303b9ec92a9b676e0925cb102f1b5f98"
+  },
+  {
+    "path": "windfarm_terrain_v5/terrain_config.json",
+    "sha256": "99e0cf64e169cf37c0b2ab70ff1839a5c81b132db6f1dd81ef5f8496c2c1addb"
+  },
+  {
+    "path": "windfarm_terrain_v5/terrain_experiments.py",
+    "sha256": "b28cf748cf7911fbea0390ca771c983d8a3b054469e09b5212ae117f9e445fda"
+  },
+  {
+    "path": "windflo_standard/bootstrap.py",
+    "sha256": "5422fc09de7dfd09885b1dd152ab6da07e195a40e7e1d9f886e8e640ae8b6566"
+  },
+  {
+    "path": "windflo_standard/data/SOURCE.json",
+    "sha256": "b531a11f40f9df6ed5fe0ee0dccda0b3e579a95ec3a7b5be9627b2f0fb9c46c2"
+  },
+  {
+    "path": "windflo_standard/data/Scenarios/00.xml",
+    "sha256": "9d222cfbebb0f6ccffdc0cf18a3c325825b634b671deb654d607f4395ebf5372"
+  },
+  {
+    "path": "windflo_standard/data/Scenarios/01.xml",
+    "sha256": "533817bc34b6aea47e4d3023162f28893a201e07eb8c6f89315897a5ddd20180"
+  },
+  {
+    "path": "windflo_standard/data/Scenarios/02.xml",
+    "sha256": "a5bc9dfdfbf6987db3ad53855b6dc7b1f56b212ca0b3ced64ec9a5bbebf7f13e"
+  },
+  {
+    "path": "windflo_standard/data/Scenarios/03.xml",
+    "sha256": "5bb03d32282455cc6c357aa77916feb297daaf7f1b8bc8001b273b8d3eb5f859"
+  },
+  {
+    "path": "windflo_standard/data/Scenarios/04.xml",
+    "sha256": "4fd4668b73bc4067e7376b584f0756e3d99cc3e4cfe133aea45760cea554e9d6"
+  },
+  {
+    "path": "windflo_standard/data/Scenarios/05.xml",
+    "sha256": "ed8249a370db73e1fc0e524d416b8a982f1062eae712fb99eb816c65e40f8573"
+  },
+  {
+    "path": "windflo_standard/data/Scenarios/06.xml",
+    "sha256": "b97297fcd5728b7c67e249249aed4d1f41ffa1c2e230f41736d1ce0ae9ae0d11"
+  },
+  {
+    "path": "windflo_standard/data/Scenarios/07.xml",
+    "sha256": "caf9e7317e5638de96da3e19128ef409616fc9c5115965ea4fde459e77abe3cb"
+  },
+  {
+    "path": "windflo_standard/data/Scenarios/08.xml",
+    "sha256": "b9adabb5c7f7d369283bab45afbc1e88a7113489f95be6482fdb40054027b8a6"
+  },
+  {
+    "path": "windflo_standard/data/Scenarios/09.xml",
+    "sha256": "a343919ef3d224ef618fb1ee41d750e7a2fe1e6be70cb3bddcf8e37e033249d8"
+  },
+  {
+    "path": "windflo_standard/data/Scenarios/obs_00.xml",
+    "sha256": "08f705d598f8644902b96fb7d18f4f8f1283e846fb61deb6c5967f9b5d71da0f"
+  },
+  {
+    "path": "windflo_standard/data/Scenarios/obs_01.xml",
+    "sha256": "36c525bea27f1b7d3300702d365645b765d6bf1847105eed251c1cddec9ab38e"
+  },
+  {
+    "path": "windflo_standard/data/Scenarios/obs_02.xml",
+    "sha256": "a8437fc2a0c4cc40dd83e85465e4fab7cb8a385027212d04eda462897ea004ba"
+  },
+  {
+    "path": "windflo_standard/data/Scenarios/obs_03.xml",
+    "sha256": "305da2b074a964df703fe64caab4740a010e113ceace9b0db223009ed66817b9"
+  },
+  {
+    "path": "windflo_standard/data/Scenarios/obs_04.xml",
+    "sha256": "21d3d8cec53eec2006a8986230f046f2e4337563b1e194bc95e7a7f0bd85b075"
+  },
+  {
+    "path": "windflo_standard/data/Scenarios/obs_05.xml",
+    "sha256": "8a2c8dd7539a039a10519e9ad2e70c54b5b6f02565634cb8e205111d5dbff044"
+  },
+  {
+    "path": "windflo_standard/data/Scenarios/obs_06.xml",
+    "sha256": "e8a8446a2aa151fe0f9fddb6038d63dee7e9b41dcb0803691efdf989ec139534"
+  },
+  {
+    "path": "windflo_standard/data/Scenarios/obs_07.xml",
+    "sha256": "08925cabcbc085d5b19c70425099f50bf3e345cc565728f6b26ed9d12663c0e7"
+  },
+  {
+    "path": "windflo_standard/data/Scenarios/obs_08.xml",
+    "sha256": "69fb1c4a23e02d04c8323b6ac7f3dda29cb434295b6431b46d5ae04310270a14"
+  },
+  {
+    "path": "windflo_standard/data/Scenarios/obs_09.xml",
+    "sha256": "8b171ea97b0b8c1c20ef1bc601eed76f467b84f736fb29e94b1c4cf16ef826bd"
+  },
+  {
+    "path": "windflo_standard/evaluator.py",
+    "sha256": "ab60ab07ae62011fa972e698d1fa027491c74c106e1b809d789ef9e0b9f53bb5"
+  },
+  {
+    "path": "windflo_standard/launch.py",
+    "sha256": "49c800477d5ed1a9ad1f7317f17992f3528ec047571613c9c59ec94f5a3c08b1"
+  },
+  {
+    "path": "windflo_standard/reference/Java/KusiakLayoutEvaluator.java",
+    "sha256": "8ddc30d35c3424a9ed664abab160dafcbb26df50f6174e0e1caefa73c3a3480f"
+  },
+  {
+    "path": "windflo_standard/reference/Java/WindFarmLayoutEvaluator.java",
+    "sha256": "b402a8e035cb8baaf879c2f1edc2a240959f25bbb0296f12c98d4e9712293dc6"
+  },
+  {
+    "path": "windflo_standard/reference/Java/WindScenario.java",
+    "sha256": "a34b8325ca648779b371bfe50d3508983791a339f739dc470f5c2230cbbcc502"
+  },
+  {
+    "path": "windflo_standard/reference/LICENSE",
+    "sha256": "e142adef43bf1b67697cef3dad1583c39886ca495aa17483c465bc684ad4b185"
+  },
+  {
+    "path": "windflo_standard/reference/Python/KusiakEvaluator.py",
+    "sha256": "a3efc2d429e579ed5a2d41df2c21ed4335a613668308f153b19ae7458cf9c981"
+  },
+  {
+    "path": "windflo_standard/reference/README.md",
+    "sha256": "57dde278dac2adc60e4394822cd71272724c212d5a73c8415e94e2775815f077"
+  },
+  {
+    "path": "windflo_standard/reference/ReferenceHarness.java",
+    "sha256": "679b38f804b33ab0982ad074dfd28a3e01510825fc5396a421c33bc30a5c2476"
+  }
+]

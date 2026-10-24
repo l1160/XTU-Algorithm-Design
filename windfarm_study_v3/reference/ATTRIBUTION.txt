@@ -1,0 +1,15 @@
+Algorithm source headers retained unmodified from BIMK/PlatEMO.
+See SOURCE.json for pinned commit and exact source file list.
+
+The Python algorithms.py is a source-guided adaptation for this constrained
+random-key study. Source formula identities and restart determinism are tested;
+no MATLAB runtime equivalence testing was performed.
+
+PlatEMO source header terms: Copyright (c) 2026 BIMK Group. Research use is
+permitted; publications using this platform or code should acknowledge PlatEMO
+and cite Tian, Cheng, Zhang and Jin (2017), IEEE CIM 12(4):73-87.
+Original LMOCSO, DGEA and CCGDE3 publications must also be cited as described in
+the source files and the Chinese research-plan document.
+
+WindFLO MIT reference and source remain in ../../windflo_standard/reference/.
+This study does not relicense third-party code. See the source headers/licenses.

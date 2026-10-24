@@ -1,0 +1,20 @@
+{
+  "flat": {
+    "order": 32,
+    "validation_pairs": 68,
+    "max_relative_error": 3.370118135535144e-15,
+    "tolerance": 0.0001
+  },
+  "rolling": {
+    "order": 32,
+    "validation_pairs": 68,
+    "max_relative_error": 1.1262794940137046e-06,
+    "tolerance": 0.0001
+  },
+  "ridge": {
+    "order": 256,
+    "validation_pairs": 68,
+    "max_relative_error": 5.45513519880031e-05,
+    "tolerance": 0.0001
+  }
+}

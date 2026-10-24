@@ -1,0 +1,28 @@
+{
+  "stage": "mechanism_screening_not_final_confirmatory_comparison",
+  "model": "v4.downstream-only",
+  "cases": [
+    {"scenario":"obs_00","candidates":800,"turbines":400},
+    {"scenario":"obs_00","candidates":1600,"turbines":400}
+  ],
+  "seeds":[201,202,203],
+  "population":100,
+  "evaluations":2000,
+  "checkpoint_requests":500,
+  "workers":6,
+  "variants":["NSGA3_base","CCwake_base","CCrandom_base","CCrandom_2g40","CCrandom_2g80","LM_base","LM_no_writeback","LM_keep_velocity","LM_range_APD","DGEA_base","DGEA_no_writeback","DGEA_range_APD"],
+  "paired_contrasts":[
+    ["CCrandom_2g40","CCrandom_base"],
+    ["CCrandom_2g80","CCrandom_2g40"],
+    ["LM_no_writeback","LM_base"],
+    ["LM_keep_velocity","LM_base"],
+    ["LM_range_APD","LM_base"],
+    ["DGEA_no_writeback","DGEA_base"],
+    ["DGEA_range_APD","DGEA_base"],
+    ["CCwake_base","CCrandom_base"]
+  ],
+  "primary_metric":"HV, one pooled per-case normalization shared by all variants; reference (1.1,1.1,1.1)",
+  "secondary_metrics":["unique feasible layouts","duplicate rate","raw and repaired feasibility","repair-key displacement","population size","nonzero velocity fraction","AEP/LCOE/area"],
+  "interpretation":"3 paired seeds per case are screening only. No statistical-significance or universal causal claims. All factors compared under identical corrected physics and charged request budgets. No-writeback changes genotype-phenotype coupling and implicitly changes velocity reset behavior; keep-velocity contrast isolates the reset rule.",
+  "next_stage_rule":"Inspect mechanisms and consistency across both M levels before selecting disjoint-seed confirmation. Do not alter costs or objective definitions to make an algorithm win. This configuration does not launch confirmatory runs automatically."
+}

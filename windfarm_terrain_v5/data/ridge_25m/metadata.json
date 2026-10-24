@@ -1,0 +1,30 @@
+{
+  "source": "synthetic analytic terrain sampled on a regular DEM; not observed data",
+  "coordinate_system": "local Cartesian metres, no real geographic location or EPSG",
+  "kind": "ridge",
+  "generator_parameters": {
+    "base_m": 100.0,
+    "rolling_m": 40.0,
+    "ridge_m": 350.0
+  },
+  "formula": "100 + A*sin(2*pi*x/7000)*sin(2*pi*y/14000) + B*exp(-0.5*((u/600)^2+(v/2500)^2)); u,v are 25-degree rotated offsets from (3800,7600)",
+  "extent_m": [
+    0,
+    0,
+    7000,
+    14000
+  ],
+  "resolution_m": 25.0,
+  "node_shape": [
+    561,
+    281
+  ],
+  "minimum_height_m": 71.71021288125601,
+  "maximum_height_m": 452.8773061513343,
+  "maximum_cell_slope_deg": 19.717146670704697,
+  "slope_limit_deg": 15.0,
+  "slope_limit_status": "declared scenario assumption, not an engineering code or site approval threshold",
+  "excluded_slope_area_km2": 3.631875,
+  "slope_rule": "A cell is excluded if the maximum gradient magnitude of its bilinear DEM surface exceeds tan(limit).",
+  "sha256": "e77975123d02c2104583bbfd22ca8f5323f11f9d305a8bd27bd204e15f3483b4"
+}

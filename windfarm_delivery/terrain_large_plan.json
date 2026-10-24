@@ -1,0 +1,31 @@
+{
+  "version": "synthetic-ridge-large-scale-confirmation-v1",
+  "status": "preflight_required; optimization_not_launched",
+  "research_question": "Does the comparison among the three declared large-scale adaptations remain stable on synthetic ridge terrain with a longer budget and transfer to a second wind distribution?",
+  "cases": [
+    {"scenario":"obs_00", "terrain":"ridge", "candidates":1600, "turbines":400},
+    {"scenario":"obs_01", "terrain":"ridge", "candidates":1600, "turbines":400}
+  ],
+  "variants": ["CCwake_base", "LM_base", "DGEA_base"],
+  "seeds": [801,802,803,804,805,806,807,808,809,810],
+  "population": 100,
+  "evaluations": 10000,
+  "total_runs": 60,
+  "resolution_m": 50,
+  "slope_limit_deg": 15,
+  "paired_contrasts": [["CCwake_base","LM_base"],["CCwake_base","DGEA_base"],["LM_base","DGEA_base"]],
+  "statistics": "Two-sided exact paired sign-flip tests, 10 seeds per case, Holm over all 6 declared contrasts across the two wind distributions. Report signed effects and every paired difference; assume sign-exchangeability under null.",
+  "primary_metric": "All-visited feasible archive HV with common empirical normalization within each case over the three methods, reference [1.1,1.1,1.1]. No absolute HV comparisons between winds or old/new normalization pools.",
+  "secondary_metrics": ["AEP", "benchmark LCOE", "gross and effective planar envelope", "surface MST length", "raw and repaired feasibility", "unique feasible layouts", "duplicate rate", "population size", "elapsed time", "convergence"],
+  "comparability": "Within each wind case and seed verify the same initial100 layouts. Across winds verify dimensions and geometry before asserting shared candidate coordinates. Cost anchor and repair policy remain as in frozen V5.",
+  "preflight_gates": ["V4 and V5 source fingerprints unchanged", "obs_01 dimensions and obstacles compatible with the synthetic DEM", "slope mask and candidate pool independently checked for both winds", "adequate feasible certificates", "exact engine/checkpoint continuation for all three algorithms", "surface routes reuse audited quadrature", "saved obs_00 V5 layout objective reproduction", "shared initialization across three algorithms for both winds"],
+  "interpretation": [
+    "Artificial local-coordinate elevation; not measured topography and no real terrain wind-field validation.",
+    "Only ridge/M1600 is confirmed here. This does not cover every terrain or turbine-count scale.",
+    "Without a paired flat/ridge optimization factorial, this campaign alone does not isolate terrain as the cause of an algorithm-ranking change. Fixed-layout component controls address a separate model-mechanism question.",
+    "All algorithms are declared Python constrained random-key adaptations; no original-paper superiority claim."
+  ],
+  "background_only": true,
+  "preserve_old_results": true,
+  "resource_rule": "Prepare and audit in a background worker; set a bounded CPU worker count before launch, accounting for the active repair campaign. No GPU use or NSGA-III runs."
+}

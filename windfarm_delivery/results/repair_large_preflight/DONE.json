@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "source_hashes": {
+    "windfarm_delivery/repair_ablation_large_model.py": "97e4e2bfc3c740f4d689f24d9db2ee01461ebc9dc21049cd998b78148f7def42",
+    "windfarm_delivery/repair_ablation_model.py": "8773770e837c30f859d6c059230e7be54f89b0a91d68e53d20cd5e687acb3d4f",
+    "windfarm_delivery/repair_ablation_plan_large_scale.json": "a00a14cda4614e5cd1dfcfe21a1d6d8f2346bd628cc148174db038cd369f7663",
+    "windfarm_delivery/repair_large_preflight.py": "660a1db91023f798751f5e9bc0d8fa929fbb541fc7b14057285921f895e0f2c5",
+    "windfarm_delivery/research_scope_20261021.json": "417b5093b0103910635fe8d7f9ad07668f074260d1a682781ad8815ce5672329",
+    "windfarm_research_v4/analyze_pilot.py": "ca5170dfa2d145157483dccdfbc5a7601895566a9b0da7ef8b4a96aa11b87932",
+    "windfarm_research_v4/audit.py": "bf3747328871ab11a6f849c438a9de7b2698a2b6d5cf7b9669d465035aed7d27",
+    "windfarm_research_v4/bootstrap_v4.py": "cf6627864838002a890a47776f6bfb72b0457d1b50f3057b4b59fcb9c2972468",
+    "windfarm_research_v4/launch.py": "3975c3d8513b2c8dcae76e5af07d660ba5dea59392c65e64b19b31686f3cdbad",
+    "windfarm_research_v4/model_v4.py": "7fac360d15c1c22447e781511a15bdf98148306516bd5eb95de9ac87038a02e5",
+    "windfarm_research_v4/pilot.py": "b16ab41a7e73bcaefecf09774c32666dd06eec2ae85e889f0b79ec79f57b6949",
+    "windfarm_research_v4/pilot_config.json": "0e27a969d301cde48b25b8c1e2a4c9f456148523768044f9b6b3833726a2decf",
+    "windfarm_research_v4/posthoc/confirm.py": "40a51ca016a57575b2e464822b232acad2368b5791c50010bc962397cce55421",
+    "windfarm_research_v4/posthoc/confirm_analysis.py": "78c3de7d2b49eb4c3cd1f750214fe66eda2f5db322c6d44311e01fd65dda3c52",
+    "windfarm_research_v4/posthoc/confirm_variants.py": "2983fcd3a6bb25defc004c8abf7056aae6095292df12b5fe2e31fea05427880e",
+    "windfarm_research_v4/posthoc/confirmation_config.json": "51a1de70b3ce5418fb06672ff30c212ccb557fa0b08608714f1859173bab1b8b",
+    "windfarm_research_v4/preflight.py": "23e242d274ba6212571ff71b92feffbd1c797513f77cc464db404ba644ecfd4f",
+    "windfarm_research_v4/variants.py": "b70bd0ab0b1f886456034d9f1cd7b41dfbcd8f4cb4a62e1a4aa53b75147ea757",
+    "windfarm_study_v3/algorithms.py": "7beed0fc30215d5241ceea8b0237b38fe0961e64ab37e29f2e289b64d9ed778d",
+    "windfarm_study_v3/economics.json": "153c2ee980c4afc43dca17216070bf27eb9f9fbbaac3796a481fd656fae64dcd",
+    "windfarm_study_v3/model.py": "9a2498c5da8007caeb7152f7e980317e908b18137b0d6b2a6a1f26df3f60611b",
+    "windfarm_study_v3/physical.py": "dc3f86b4879e443c21b862926cb801d35d3031d819dcf857e2c888fb935cbe55",
+    "windflo_standard/data/Scenarios/obs_00.xml": "08f705d598f8644902b96fb7d18f4f8f1283e846fb61deb6c5967f9b5d71da0f",
+    "windflo_standard/data/Scenarios/obs_01.xml": "36c525bea27f1b7d3300702d365645b765d6bf1847105eed251c1cddec9ab38e",
+    "windflo_standard/evaluator.py": "ab60ab07ae62011fa972e698d1fa027491c74c106e1b809d789ef9e0b9f53bb5"
+  },
+  "scope": "Portable source hash gate extracted from original successful preflight; full historical audit retained locally."
+}

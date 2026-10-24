@@ -1,0 +1,44 @@
+{
+  "status": "passed",
+  "finished_at": "2026-10-24T10:43:14.616661+08:00",
+  "fixed_layouts_reproduced": 12,
+  "synthetic_DEM_grids_reproduced": 9,
+  "algorithm_interface_checks": [
+    {
+      "method": "CCGDE3_wake",
+      "requests": 120,
+      "scope": "functional_only"
+    },
+    {
+      "method": "LMOCSO",
+      "requests": 120,
+      "scope": "functional_only"
+    },
+    {
+      "method": "DGEA",
+      "requests": 120,
+      "scope": "functional_only"
+    }
+  ],
+  "dependency_versions": {
+    "numpy": "2.3.5",
+    "scipy": "1.16.3",
+    "shapely": "2.1.2",
+    "pymoo": "0.6.1.6",
+    "matplotlib": "3.10.8",
+    "dill": "0.4.0"
+  },
+  "new_performance_experiments": 0,
+  "verification_scope": "Relocated code/data with locally installed pinned dependencies; not a clean-machine pip installation test",
+  "partition_sizes": [
+    9,
+    9,
+    9,
+    9,
+    8,
+    8,
+    8
+  ],
+  "source": "verify_public.py",
+  "launchers": "PowerShell syntax checked; seven-way partition verified; no full campaign launched for publishing"
+}

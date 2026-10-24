@@ -1,0 +1,5 @@
+﻿treatment,control,independent_p,independent_Holm_p
+LM_greedy,LM_none,0.001953125,0.0078125
+LM_backtrack,LM_greedy,1.0,1.0
+DGEA_greedy,DGEA_none,0.001953125,0.0078125
+DGEA_backtrack,DGEA_greedy,1.0,1.0

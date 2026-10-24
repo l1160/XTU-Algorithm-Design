@@ -1,0 +1,34 @@
+{
+  "stage": "independent_seed_mechanism_confirmation",
+  "model": "v4.downstream-only",
+  "output": "D:\\suanfa\\windfarm_research_v4\\results\\confirmation",
+  "cases": [
+    {"scenario":"obs_00","candidates":800,"turbines":400},
+    {"scenario":"obs_00","candidates":1600,"turbines":400},
+    {"scenario":"obs_01","candidates":800,"turbines":400},
+    {"scenario":"obs_01","candidates":1600,"turbines":400}
+  ],
+  "seeds": [301,302,303,304,305,306,307,308,309,310],
+  "population": 100,
+  "evaluations": 10000,
+  "checkpoint_requests": 500,
+  "workers": 6,
+  "variants": [
+    "NSGA3_base","CCwake_base","CCrandom_base",
+    "LM_base","LM_range_APD","LM_fill_population",
+    "DGEA_base","DGEA_no_writeback"
+  ],
+  "paired_contrasts": [
+    ["LM_range_APD","LM_base"],
+    ["LM_fill_population","LM_base"],
+    ["CCwake_base","CCrandom_base"],
+    ["DGEA_no_writeback","DGEA_base"],
+    ["CCwake_base","NSGA3_base"]
+  ],
+  "primary_metric": "All-visited feasible nondominated archive HV; shared pooled per-case empirical normalization and reference (1.1,1.1,1.1).",
+  "statistics": "Two-sided exact paired sign-flip of HV mean difference; Holm across all 5 contrasts and 4 cases, family size 20. Sign-exchangeability under the null is assumed.",
+  "selection_basis": "LM range scaling improved 6/6 screening pairs; wake grouping improved 6/6 against random; DGEA no-writeback reduced duplicates but worsened HV in 6/6. Retain the adverse treatment explicitly. LM fill is a new prespecified mechanism intervention based on deterministic initial shrinkage, not a screened winner.",
+  "new_variant_scope": "LM_fill_population preserves original nondominated/APD survivors, then fills to 100 from existing candidates by feasibility, nondomination rank and crowding. No new random immigrants, extra evaluations or phenotype deduplication. It is a proposed adaptation, not original LMOCSO.",
+  "controls": "Same physical objectives, cost parameters, N, candidate pool and initial 100 layouts within each case/seed. V3 and screening evidence remain unchanged.",
+  "interpretation": "Longer-budget independent-seed confirmation, including transfer to obs_01. Fixed N=400; not a turbine-count scaling study. Record negative and inconclusive results as well as improvements."
+}

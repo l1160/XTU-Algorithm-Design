@@ -1,0 +1,40 @@
+{
+  "version": "offspring-spacing-repair-ablation-v2-large-scale-only",
+  "status": "not_launched; LMOCSO/DGEA preflight required",
+  "supersedes": "repair_ablation_plan.json, following the user's 2026-10-21 scope correction",
+  "case": {"scenario": "obs_01", "candidates": 1600, "turbines": 400},
+  "algorithms": ["LMOCSO", "DGEA"],
+  "repair_modes": ["none", "greedy", "bounded_backtrack"],
+  "seeds": [601, 602, 603, 604, 605, 606, 607, 608, 609, 610],
+  "population": 100,
+  "requests_per_run": 10000,
+  "total_runs": 60,
+  "scope": "Spacing-repair policy after common feasible initialization; forbidden-location filtering and feasibility-priority selection remain enabled in all modes. No NSGA-III research.",
+  "initialization": "All six algorithm/mode cells use the same initial 100 random keys repaired by the frozen bounded-backtrack policy. Include these 100 evaluations in the budget. Treatment begins at request 101. Verify initial returned keys, selected layouts, objectives and CV across cells for each seed.",
+  "modes": {
+    "none": "Select N smallest clipped keys without spacing repair. Invalid layouts retain their measured constraint violation and cannot enter the feasible Pareto archive.",
+    "greedy": "Frozen key-order greedy fill, no removal/refill attempts. On failure, retain original N indices with their true constraint violation.",
+    "bounded_backtrack": "Frozen greedy fill and at most 20 one-removal refill attempts; heuristic, not exhaustive search."
+  },
+  "fixed_factors": ["candidate geometry", "number of turbines", "physics and economics", "objective scaling", "shared initial keys", "algorithm variation and selection", "request budget", "one BLAS thread per worker"],
+  "primary_metric": "HV of all visited feasible layouts after 10000 requests, including the common initialization; common per-case empirical bounds pooled over all 60 runs; reference [1.1,1.1,1.1]. Record zero-range dimensions explicitly.",
+  "primary_contrasts": [
+    {"algorithm": "LMOCSO", "treatment": "greedy", "control": "none"},
+    {"algorithm": "LMOCSO", "treatment": "bounded_backtrack", "control": "greedy"},
+    {"algorithm": "DGEA", "treatment": "greedy", "control": "none"},
+    {"algorithm": "DGEA", "treatment": "bounded_backtrack", "control": "greedy"}
+  ],
+  "statistics": "Two-sided exact paired sign-flip tests of per-seed HV mean differences, Holm over the four declared contrasts; report all paired differences, effects, wins and ties. Assumes sign-exchangeability under the null.",
+  "secondary_metrics": ["post-initialization raw and repaired feasible rates", "unique feasible layouts", "feasible and infeasible duplicate counts", "greedy failure count", "backtrack invocation and success count", "repair time", "physical objective calls", "wall time separated from initialization", "HV convergence", "population size and velocity resets"],
+  "interpretation": [
+    "The treatment measures the complete repair policy, including writeback and the existing velocity-reset response; do not claim a pure geometric-repair effect with all downstream search states fixed.",
+    "The LMOCSO condition uses the declared base adaptation; do not silently substitute the fill-population intervention or alter APD to obtain a preferred ranking.",
+    "The first feasible solution exists in every shared initialization, so first-feasibility time is uninformative.",
+    "Equal requests do not imply equal physical evaluations or equal wall time.",
+    "No observed backtracking or no HV advantage is a reportable negative finding, not a reason to choose a different instance after seeing results.",
+    "One case only supports a local mechanism conclusion."
+  ],
+  "preflight_gates": ["frozen-source integrity", "decoder equality with existing policies including ties and failures", "independent constraint violation calculation", "same initial returned keys/layouts/objectives", "feasibility preference in both algorithm paths", "exact next-step checkpoint recovery for all six cells", "finite outputs and exact request budgets"],
+  "runtime": "Background execution only, kernel-lock duplicate protection, full last.pkl checkpoints, append-only per-launch logs. Never fresh-restart an interrupted run with an existing checkpoint.",
+  "historical_results": "No original V3/V4/V5 files are overwritten. The old NSGA3/DGEA preflight remains archived and does not alone satisfy this new protocol."
+}

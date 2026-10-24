@@ -1,0 +1,5 @@
+﻿case,treatment,control,n,mean_HV_difference,median_HV_difference,wins,ties,losses,paired_signflip_p,Holm_adjusted_p
+obs_01_M1600_N400,LM_greedy,LM_none,10,0.23009863430325267,0.2184446324943099,10,0,0,0.001953125,0.0078125
+obs_01_M1600_N400,LM_backtrack,LM_greedy,10,0.0,0.0,0,10,0,1.0,1.0
+obs_01_M1600_N400,DGEA_greedy,DGEA_none,10,0.5182147341721404,0.5183308288335239,10,0,0,0.001953125,0.0078125
+obs_01_M1600_N400,DGEA_backtrack,DGEA_greedy,10,0.0,0.0,0,10,0,1.0,1.0

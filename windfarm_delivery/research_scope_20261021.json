@@ -1,0 +1,18 @@
+{
+  "version": "large-scale-only-20261021",
+  "authority": "User explicitly requested removal of NSGA-III as a baseline and no further NSGA-III research, 2026-10-21",
+  "primary_algorithms": ["CCGDE3-inspired constrained random-key adaptation", "LMOCSO constrained random-key adaptation", "DGEA constrained random-key adaptation"],
+  "excluded_from_future_research": ["NSGA3", "NSGA3_base", "NSGA-III"],
+  "retain_as_ablation_variants": ["CCrandom_base", "LM_range_APD", "LM_fill_population", "DGEA_no_writeback"],
+  "historical_evidence": "Preserve completed results, source code, logs and checkpoints. Old analyses and reports containing NSGA-III remain historical and are not the current research presentation. Do not erase inconvenient results or claim that the old runs did not occur.",
+  "requirement_interpretation": "The supplied task excerpt says to choose suitable large-scale multi-objective algorithms and constraint handling, with CCGDE3, LMOCSO and DGEA as examples. The new restricted comparison follows the user's chosen scope, not a claim that the task explicitly prohibited NSGA-III.",
+  "analysis_change": "Recompute per-case empirical normalization and HV using only retained algorithm variants. Keep this filtered descriptive reanalysis distinct from original frozen confirmatory analysis. Do not reuse original pooled HV as though NSGA-III had not entered the bounds, or silently reduce a multiple-testing family.",
+  "no_new_optimization_from_filtering": true,
+  "repair_ablation_algorithms": ["LMOCSO", "DGEA"],
+  "repair_ablation_count": 60,
+  "repair_ablation_status": "Not launched. Supersedes prior NSGA3/DGEA protocol; new LMOCSO interface/checkpoint preflight required.",
+  "terrain_confirmation_comparison": ["CCwake_base", "LM_base", "DGEA_base"],
+  "terrain_confirmation_status": "Old proposed NSGA3/CCwake 40-run comparison withdrawn. New budget and pairings must be frozen before launch; no replacement optimization started.",
+  "fixed_layout_terrain_controls": "Previously completed controls used 100 shared initial layouts stored in NSGA3-named directories. These were shared initial samples, not optimized NSGA-III outputs. Preserve original provenance, describe as common initial layouts and verify cross-method identity before reusing them in current-scope artifacts.",
+  "reports": "Do not regenerate Word or PPT on this scope change alone; finish experiments and then update once. Existing deliverables must carry a scope-change notice."
+}

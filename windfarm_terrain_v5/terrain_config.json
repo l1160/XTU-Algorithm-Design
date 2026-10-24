@@ -1,0 +1,25 @@
+{
+  "stage": "synthetic_terrain_screening",
+  "model": "v5.synthetic-terrain-geometry",
+  "cases": [
+    {"scenario":"obs_00","terrain":"flat","candidates":800,"turbines":400},
+    {"scenario":"obs_00","terrain":"flat","candidates":1600,"turbines":400},
+    {"scenario":"obs_00","terrain":"rolling","candidates":800,"turbines":400},
+    {"scenario":"obs_00","terrain":"rolling","candidates":1600,"turbines":400},
+    {"scenario":"obs_00","terrain":"ridge","candidates":800,"turbines":400},
+    {"scenario":"obs_00","terrain":"ridge","candidates":1600,"turbines":400}
+  ],
+  "variants":["NSGA3_base","CCwake_base","LM_base","LM_fill_population","DGEA_base"],
+  "seeds":[501,502,503],
+  "population":100,
+  "evaluations":2000,
+  "checkpoint_requests":500,
+  "workers":2,
+  "resolution_m":50,
+  "slope_limit_deg":15,
+  "primary_metric":"Per-terrain per-M common pooled-normalization HV, reference 1.1. Do not compare absolute normalized HV between terrain cases.",
+  "secondary_metrics":["AEP","LCOE","effective envelope","gross envelope","terrain-surface connection length","raw and repaired feasibility","duplicates","population size"],
+  "scope":"90 prespecified screening runs, 180000 requests. Synthetic terrain and geometric wake extension, not measured-site or CFD validation. Three seeds are insufficient for confirmatory significance.",
+  "resource_rule":"Two terrain optimizer workers in addition to the existing six V4 confirmation workers; BLAS threads fixed to one.",
+  "comparability":"Within each case and seed all methods share the initial 100 layouts. Across terrains the slope-filtered candidate sets can differ. Lower effective area across terrain masks is not by itself evidence of a more compact layout; report gross envelope too."
+}
