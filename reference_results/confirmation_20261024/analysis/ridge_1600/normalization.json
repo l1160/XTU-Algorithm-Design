@@ -1,0 +1,23 @@
+{
+  "ideal": [
+    -2746.412176500307,
+    34.64144700117835,
+    68.1600479089694
+  ],
+  "nadir": [
+    -2705.737553397467,
+    35.10536437593555,
+    90.74166622007273
+  ],
+  "width": [
+    40.67462310284009,
+    0.46391737475720163,
+    22.581618311103327
+  ],
+  "reference": [
+    1.1,
+    1.1,
+    1.1
+  ],
+  "scope": "One pooled ideal/nadir per case from every feasible evaluated objective vector of all 60 runs; reference [1.1,1.1,1.1]; no cross-case raw-HV comparisons."
+}

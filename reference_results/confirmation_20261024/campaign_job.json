@@ -1,0 +1,7 @@
+{
+  "mode": "Compare",
+  "output": "D:\\suanfa\\github_public\\windfarm-layout-optimization\\reproduced\\confirmation_20261024",
+  "plan": "D:\\suanfa\\github_public\\windfarm-layout-optimization\\reproduced\\confirmation_20261024\\plan.json",
+  "plan_sha256": "dc88157642cac93153aa82c7e80c3e7a1612675005083c82a6cb6446f637211e",
+  "dependency_path": "D:\\suanfa\\windfarm_proto\\.deps"
+}

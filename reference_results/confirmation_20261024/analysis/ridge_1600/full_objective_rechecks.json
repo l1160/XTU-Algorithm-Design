@@ -1,0 +1,86 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "run": "ridge_1600_s1101_CCGDE3",
+      "request_index": 8295,
+      "maximum_relative_error": 2.051910263826324e-16
+    },
+    {
+      "run": "ridge_1600_s1101_CCGDE3",
+      "request_index": 9048,
+      "maximum_relative_error": 1.805839658247342e-16
+    },
+    {
+      "run": "ridge_1600_s1101_CCGDE3",
+      "request_index": 9620,
+      "maximum_relative_error": 0.0
+    },
+    {
+      "run": "ridge_1600_s1101_CCGDE3_problem",
+      "request_index": 8881,
+      "maximum_relative_error": 0.0
+    },
+    {
+      "run": "ridge_1600_s1101_CCGDE3_problem",
+      "request_index": 9707,
+      "maximum_relative_error": 1.6671157502244976e-16
+    },
+    {
+      "run": "ridge_1600_s1101_LMOCSO",
+      "request_index": 22,
+      "maximum_relative_error": 0.0
+    },
+    {
+      "run": "ridge_1600_s1101_LMOCSO",
+      "request_index": 6446,
+      "maximum_relative_error": 0.0
+    },
+    {
+      "run": "ridge_1600_s1101_LMOCSO",
+      "request_index": 9870,
+      "maximum_relative_error": 2.0645951104757254e-16
+    },
+    {
+      "run": "ridge_1600_s1101_LMOCSO_problem",
+      "request_index": 5114,
+      "maximum_relative_error": 3.407027658430705e-13
+    },
+    {
+      "run": "ridge_1600_s1101_LMOCSO_problem",
+      "request_index": 9514,
+      "maximum_relative_error": 1.1068196019718314e-14
+    },
+    {
+      "run": "ridge_1600_s1101_LMOCSO_problem",
+      "request_index": 9815,
+      "maximum_relative_error": 1.106932224634953e-14
+    },
+    {
+      "run": "ridge_1600_s1101_DGEA",
+      "request_index": 3712,
+      "maximum_relative_error": 0.0
+    },
+    {
+      "run": "ridge_1600_s1101_DGEA",
+      "request_index": 6250,
+      "maximum_relative_error": 0.0
+    },
+    {
+      "run": "ridge_1600_s1101_DGEA_problem",
+      "request_index": 5583,
+      "maximum_relative_error": 2.0999298897389588e-13
+    },
+    {
+      "run": "ridge_1600_s1101_DGEA_problem",
+      "request_index": 8849,
+      "maximum_relative_error": 2.0502315228298594e-16
+    },
+    {
+      "run": "ridge_1600_s1101_DGEA_problem",
+      "request_index": 9433,
+      "maximum_relative_error": 2.3581072339636965e-14
+    }
+  ],
+  "scope": "Full wake accumulation and independent MST, same declared engineering model"
+}

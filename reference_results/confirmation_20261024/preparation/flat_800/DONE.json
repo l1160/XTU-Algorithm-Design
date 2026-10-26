@@ -1,0 +1,9 @@
+{
+  "status": "complete",
+  "case": "flat_800",
+  "wall_seconds": 1.6701895999722183,
+  "geometry_sha256": "12570648901fffcaf935f7bb207ff50b09d1f30675c7dd5299049df6fa3daf0a",
+  "feasible_certificate_size": 468,
+  "optimization_requests": 0,
+  "finished_at": "2026-10-24T15:03:28.097377+08:00"
+}

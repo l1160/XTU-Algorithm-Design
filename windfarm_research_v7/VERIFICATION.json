@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "tests": 7,
+  "finished_at": "2026-10-24T14:12:11.710141+08:00",
+  "scope": "Implementation checks only; no parameter sweep or performance claim",
+  "failures": [],
+  "errors": [],
+  "source_sha256": {
+    "windfarm_research_v7/__init__.py": "58f41664a170244dcc2bd9a9613a15103bc783cd7f9806cb80dcc0b28c8d9579",
+    "windfarm_research_v7/analysis.py": "4150e443b75eddbf065f94923b98b9581c1898d3bf59a15e5004939331087520",
+    "windfarm_research_v7/checks.py": "57878ba3dc4af87605e09922e1dd46b3b2fed4ba4cde6261f21d0ddc035a872c",
+    "windfarm_research_v7/engines.py": "9cdfcc7aed1a2127b917769cbcf5def23edf63cd208f1fd9694966625f1c6b8b",
+    "windfarm_research_v7/model.py": "e8b3142ed148f584fadc2298a4f7094a7d834254c48a0c0c75a2eb55946a4b0f",
+    "windfarm_research_v7/runner.py": "e0d2efee73af07f9c4b5780e17828f8c3739a6546210e52e10b7a9ecb3f339fc",
+    "windfarm_research_v7/worker.py": "a175e7e541978b2556dc745b29c295a84de95dc9d08ded61793362b541d38055"
+  },
+  "performance_scope": "Checks only; the direct comparison is launched separately"
+}

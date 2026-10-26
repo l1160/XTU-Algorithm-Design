@@ -1,0 +1,16 @@
+{
+  "method": "LMOCSO_problem",
+  "scenario": "obs_00",
+  "terrain": "flat",
+  "candidates": 800,
+  "turbines": 400,
+  "seed": 1108,
+  "candidate_seed": 20261012,
+  "population": 100,
+  "requests": 10000,
+  "checkpoint_requests": 500,
+  "incremental": true,
+  "layout_diversity": true,
+  "compound": true,
+  "max_attempts": 24
+}

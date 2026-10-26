@@ -1,0 +1,76 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "run": "flat_800_s1101_CCGDE3",
+      "request_index": 8344,
+      "maximum_relative_error": 1.7985870668607838e-16
+    },
+    {
+      "run": "flat_800_s1101_CCGDE3",
+      "request_index": 8580,
+      "maximum_relative_error": 0.0
+    },
+    {
+      "run": "flat_800_s1101_CCGDE3_problem",
+      "request_index": 8193,
+      "maximum_relative_error": 2.0190275409336873e-16
+    },
+    {
+      "run": "flat_800_s1101_CCGDE3_problem",
+      "request_index": 8799,
+      "maximum_relative_error": 0.0
+    },
+    {
+      "run": "flat_800_s1101_CCGDE3_problem",
+      "request_index": 8915,
+      "maximum_relative_error": 2.0044578876730988e-16
+    },
+    {
+      "run": "flat_800_s1101_LMOCSO",
+      "request_index": 9744,
+      "maximum_relative_error": 0.0
+    },
+    {
+      "run": "flat_800_s1101_LMOCSO",
+      "request_index": 9789,
+      "maximum_relative_error": 2.0152283523117936e-16
+    },
+    {
+      "run": "flat_800_s1101_LMOCSO",
+      "request_index": 9920,
+      "maximum_relative_error": 0.0
+    },
+    {
+      "run": "flat_800_s1101_LMOCSO_problem",
+      "request_index": 2638,
+      "maximum_relative_error": 1.5487314172155257e-12
+    },
+    {
+      "run": "flat_800_s1101_LMOCSO_problem",
+      "request_index": 2920,
+      "maximum_relative_error": 0.0
+    },
+    {
+      "run": "flat_800_s1101_DGEA",
+      "request_index": 7806,
+      "maximum_relative_error": 1.7891613137283677e-16
+    },
+    {
+      "run": "flat_800_s1101_DGEA",
+      "request_index": 9691,
+      "maximum_relative_error": 0.0
+    },
+    {
+      "run": "flat_800_s1101_DGEA_problem",
+      "request_index": 1704,
+      "maximum_relative_error": 9.86010721935922e-13
+    },
+    {
+      "run": "flat_800_s1101_DGEA_problem",
+      "request_index": 9410,
+      "maximum_relative_error": 0.0
+    }
+  ],
+  "scope": "Full wake accumulation and independent MST, same declared engineering model"
+}

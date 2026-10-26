@@ -1,0 +1,1030 @@
+{
+  "status": "passed",
+  "runs": 60,
+  "geometry_records": 600000,
+  "shared_initialization_verified": true,
+  "all_candidate_sets_matched": true,
+  "rows": [
+    {
+      "id": "ridge_1600_s1101_CCGDE3",
+      "layouts_checked": 10000,
+      "feasible_layouts": 10000,
+      "unique_feasible_layouts": 9833,
+      "exact_front_matched": true,
+      "independent_geometry_passed": true,
+      "cost_identities_passed": true,
+      "hashes": {
+        "manifest.json": "e42f2a11ff73f5fa21e42d05a569d454a3b0aa0b3d72dc527ad3545136d7fa59",
+        "DONE.json": "fb5a135c737eca169678f7e1fb0a11ee0dd917569a9e01279571ca1d832eb649",
+        "evaluations.npz": "d7c0fa9014c346290a1dd5861c808b6e4d14f244f712a7462647a550816dff64",
+        "trace.json": "60c37117d244bfb8c9847c1120c28e97432174b6ad0d7b7b91197e763a950676"
+      },
+      "independent_HV": 0.19633424453415083,
+      "HV_error": 0.0
+    },
+    {
+      "id": "ridge_1600_s1101_CCGDE3_problem",
+      "layouts_checked": 10000,
+      "feasible_layouts": 10000,
+      "unique_feasible_layouts": 9141,
+      "exact_front_matched": true,
+      "independent_geometry_passed": true,
+      "cost_identities_passed": true,
+      "hashes": {
+        "manifest.json": "7f4e4520a319b250530a5ef44edcc8ad6fd54df3553c4ec192a7e90dded36347",
+        "DONE.json": "566a60ad93f5ecdbf2987bd4e4ec2c6bf05551afdf5cd6317d436a5f739b5011",
+        "evaluations.npz": "44d98c3a5f21ed215df25365c2b646b273d011edead06be8003eab5ecb55812e",
+        "trace.json": "29e03d87bb5444c562c60d1292f4c066868cac9e9fd94389cd738a86083f1461"
+      },
+      "independent_HV": 0.17931804088542863,
+      "HV_error": 2.7755575615628914e-17
+    },
+    {
+      "id": "ridge_1600_s1101_LMOCSO",
+      "layouts_checked": 10000,
+      "feasible_layouts": 10000,
+      "unique_feasible_layouts": 644,
+      "exact_front_matched": true,
+      "independent_geometry_passed": true,
+      "cost_identities_passed": true,
+      "hashes": {
+        "manifest.json": "d9a11d26855b2c9d1aba736d5ee422f682bf443db74415b8f2023c48108dfc99",
+        "DONE.json": "c24b81b705863de6405998fea89eb765d64f26d05092bf8711a8f6d87fb0e1cf",
+        "evaluations.npz": "5833eab25e62983fbc6d3df132cc73b7e008b291de126470366c08e139649bc9",
+        "trace.json": "09694b934d34659da79f36e0cada9ebacf6b40acb374aa3edbb3f7ec307d2526"
+      },
+      "independent_HV": 0.06752190623499091,
+      "HV_error": 0.0
+    },
+    {
+      "id": "ridge_1600_s1101_LMOCSO_problem",
+      "layouts_checked": 10000,
+      "feasible_layouts": 10000,
+      "unique_feasible_layouts": 5256,
+      "exact_front_matched": true,
+      "independent_geometry_passed": true,
+      "cost_identities_passed": true,
+      "hashes": {
+        "manifest.json": "5639b61cc505f1f2db1307b7332b1b6f9b1a70df6f76e6d893a71ddaf223f0ab",
+        "DONE.json": "77af1aa2d02ec06fc5b50f4d915fff17d80220525ac2fd64ac688fa330a62cec",
+        "evaluations.npz": "005557eff7235c0aa57052b52283c70a4be9f0e45699c3af962ad88e8b738d9c",
+        "trace.json": "635bf5cd02a925651af30d85566815a9e040ad3ad346f4d4ed0f9c19b634b0dc"
+      },
+      "independent_HV": 0.4009584673981963,
+      "HV_error": 2.220446049250313e-16
+    },
+    {
+      "id": "ridge_1600_s1101_DGEA",
+      "layouts_checked": 10000,
+      "feasible_layouts": 10000,
+      "unique_feasible_layouts": 6628,
+      "exact_front_matched": true,
+      "independent_geometry_passed": true,
+      "cost_identities_passed": true,
+      "hashes": {
+        "manifest.json": "c7a6df9b109b5fd74024a22ec358c5fcd2d4cb0f211fecea44f0d4f68d5783ab",
+        "DONE.json": "3e792928f8175e223c6c34aa731c98b3c522578104271ec7d5e0727a60fdff14",
+        "evaluations.npz": "86747dbbd12f69e92122c8c3cc00007a3bced86e5fb25853400465c2f6dcf137",
+        "trace.json": "b4c21d31907aed1c07d1713c14f92549024ca23e3ca041629de9fa6f38723885"
+      },
+      "independent_HV": 0.10718094461166683,
+      "HV_error": 0.0
+    },
+    {
+      "id": "ridge_1600_s1101_DGEA_problem",
+      "layouts_checked": 10000,
+      "feasible_layouts": 10000,
+      "unique_feasible_layouts": 7299,
+      "exact_front_matched": true,
+      "independent_geometry_passed": true,
+      "cost_identities_passed": true,
+      "hashes": {
+        "manifest.json": "906b77b254e43bf70d272cbc8925ae01b8a824adf0d90ecb722f38715083e4c7",
+        "DONE.json": "dc269413050f74fa0ca094589c88ba5bbb387b458beaa6734e96230fe63eb755",
+        "evaluations.npz": "dda990fc30abb5f028117c45ab5408f31460deaf2e30714b0074179577adf0ee",
+        "trace.json": "bfc1c8b235d91a374d9cbe446b0652796da114c70e9e5e40adca4cb7d7681c01"
+      },
+      "independent_HV": 0.3617252831311337,
+      "HV_error": 1.6653345369377348e-16
+    },
+    {
+      "id": "ridge_1600_s1102_LMOCSO_problem",
+      "layouts_checked": 10000,
+      "feasible_layouts": 10000,
+      "unique_feasible_layouts": 5231,
+      "exact_front_matched": true,
+      "independent_geometry_passed": true,
+      "cost_identities_passed": true,
+      "hashes": {
+        "manifest.json": "148af5898bd1c2bc465bf2b52144c571964a883b8a9a97069bc3d4fca92032e3",
+        "DONE.json": "8753fcc21aded45b842f01f52a20a62c90a9c8f4a92fe14bd18658f0d622c9cd",
+        "evaluations.npz": "a47739e005e30d6d9bbba6e099c77d86161150e59ea47fc0fa57aca372b5e541",
+        "trace.json": "ab28e7e86f3db28a36c983b033a37244155b1abde0fab450cb49f23b568dccac"
+      },
+      "independent_HV": 0.3423802105168997,
+      "HV_error": 0.0
+    },
+    {
+      "id": "ridge_1600_s1102_LMOCSO",
+      "layouts_checked": 10000,
+      "feasible_layouts": 10000,
+      "unique_feasible_layouts": 1284,
+      "exact_front_matched": true,
+      "independent_geometry_passed": true,
+      "cost_identities_passed": true,
+      "hashes": {
+        "manifest.json": "067cb038d9d47b44784e1554ed9ccbaf175e9d6d6d785e3bf5507336ed36fff6",
+        "DONE.json": "2a0275d02c1ef7a2ec421b15234aa937f4d4d051f01cfb5184fe91359728b3a9",
+        "evaluations.npz": "a6b1073a554c1628a778d83aa4894f5daafd76b4fa034575857a997d1400896e",
+        "trace.json": "71b6927222df4cb383aa6af44f951637c0702fb1fda2c34ebda187c181b5dc26"
+      },
+      "independent_HV": 0.07029798012835384,
+      "HV_error": 0.0
+    },
+    {
+      "id": "ridge_1600_s1102_DGEA_problem",
+      "layouts_checked": 10000,
+      "feasible_layouts": 10000,
+      "unique_feasible_layouts": 6542,
+      "exact_front_matched": true,
+      "independent_geometry_passed": true,
+      "cost_identities_passed": true,
+      "hashes": {
+        "manifest.json": "292cc423d2c89f4b2ef743391602b3404e5d689222b0c4221b8bd6aada2301c5",
+        "DONE.json": "e7db8739a969430feffaea6331a31fedf221eface79af482507a7e127e0cd876",
+        "evaluations.npz": "df914c6167c4d8369636e04a85371d3009d15d7af9f0ae97ad1165f50dac26aa",
+        "trace.json": "935e516a077797b9c45404ed4d2cc31e02fd5b0539fa2f5f12d4e9ab2c78bf16"
+      },
+      "independent_HV": 0.3820190872913022,
+      "HV_error": 1.1102230246251565e-16
+    },
+    {
+      "id": "ridge_1600_s1102_DGEA",
+      "layouts_checked": 10000,
+      "feasible_layouts": 10000,
+      "unique_feasible_layouts": 7281,
+      "exact_front_matched": true,
+      "independent_geometry_passed": true,
+      "cost_identities_passed": true,
+      "hashes": {
+        "manifest.json": "cd3fefbc8ce9fb1f9bac46b91550c10ffb28b74121bab846fee1af627d72d194",
+        "DONE.json": "c867fd46fe37fb9d9fc4fb6c35c2f7e4a11667ef44daeaadb0f9602e6cdcb6f9",
+        "evaluations.npz": "5cbcdf76513030958327725209dda2353300dc2c91b6a5143ab633ee40bb3e1d",
+        "trace.json": "a3c758809106fddf83a5b6150459289b97dc7b48c8e2d23ddcec2e3e14db8b35"
+      },
+      "independent_HV": 0.0991816629233257,
+      "HV_error": 0.0
+    },
+    {
+      "id": "ridge_1600_s1102_CCGDE3_problem",
+      "layouts_checked": 10000,
+      "feasible_layouts": 10000,
+      "unique_feasible_layouts": 9094,
+      "exact_front_matched": true,
+      "independent_geometry_passed": true,
+      "cost_identities_passed": true,
+      "hashes": {
+        "manifest.json": "3cfe00dc41fe1dbd7deb81606ee35f147909aa5565344572e84314a4d80b65b8",
+        "DONE.json": "1ec2224b400f5952e1e7b7b44c501b2036a35d284c10bd64340bda48f0c62155",
+        "evaluations.npz": "24307807932c2d8c54bbe60ec0793f030268b715e0889c3ea00ec59183f1e027",
+        "trace.json": "0d8a3923225d1f379adf7fac6eb7e1a5f960fbfa59220bdc2ed78ba486345af2"
+      },
+      "independent_HV": 0.1735080321326724,
+      "HV_error": 5.551115123125783e-17
+    },
+    {
+      "id": "ridge_1600_s1102_CCGDE3",
+      "layouts_checked": 10000,
+      "feasible_layouts": 10000,
+      "unique_feasible_layouts": 9866,
+      "exact_front_matched": true,
+      "independent_geometry_passed": true,
+      "cost_identities_passed": true,
+      "hashes": {
+        "manifest.json": "8e5952929100223d7dbcb7929ccd70608248ed712211356ca0c7579e56ba773e",
+        "DONE.json": "aed21854024a103bd34036332a3c9da7144e9e28c1727bf4e99cac1ded9dedeb",
+        "evaluations.npz": "2ed2a55c4dc070488e0183d4dbb6f60a17a7b6a3eb4ac4923a7a3fa1fd97bf7e",
+        "trace.json": "4f3ffe724bb2d1c842962724fccf953d49d59cc2579d395d63bc53c60699d0be"
+      },
+      "independent_HV": 0.18702198244992305,
+      "HV_error": 5.551115123125783e-17
+    },
+    {
+      "id": "ridge_1600_s1103_DGEA",
+      "layouts_checked": 10000,
+      "feasible_layouts": 10000,
+      "unique_feasible_layouts": 6901,
+      "exact_front_matched": true,
+      "independent_geometry_passed": true,
+      "cost_identities_passed": true,
+      "hashes": {
+        "manifest.json": "7ab1b3afb1db45e455eb3a67b8e591afd3ff02f72851971ada5cafdb625d3e6c",
+        "DONE.json": "0f8e4ebc78e6f3e2c7d75c31193b0728bf5eeea2817eb06d67718155a212cb9c",
+        "evaluations.npz": "6c4da41937414ad468555d54494c6bafd8ed218bfd12e3bd83283ec47dccf239",
+        "trace.json": "0f8ab0792d69a9009bf8ce815d3f64c7ef730609c2b56ce7c4b5cda93745cb42"
+      },
+      "independent_HV": 0.10014153225953562,
+      "HV_error": 0.0
+    },
+    {
+      "id": "ridge_1600_s1103_DGEA_problem",
+      "layouts_checked": 10000,
+      "feasible_layouts": 10000,
+      "unique_feasible_layouts": 6928,
+      "exact_front_matched": true,
+      "independent_geometry_passed": true,
+      "cost_identities_passed": true,
+      "hashes": {
+        "manifest.json": "822a3401748979c8ea8a4644da4ff1a564b2e5e6d65497396176342732994477",
+        "DONE.json": "89724737892ddc12097fa5eb124969b11e271f0d6df73dd2229126f4a5d5f4ee",
+        "evaluations.npz": "266abf1f942becb575e42073b04e5b76eb13cf18444f849ccde1705394d0b5ba",
+        "trace.json": "9864bc21214092d63d8eca25d8e3deb7e367737e3549943608647b479388e056"
+      },
+      "independent_HV": 0.3979254207482912,
+      "HV_error": 1.6653345369377348e-16
+    },
+    {
+      "id": "ridge_1600_s1103_CCGDE3",
+      "layouts_checked": 10000,
+      "feasible_layouts": 10000,
+      "unique_feasible_layouts": 9839,
+      "exact_front_matched": true,
+      "independent_geometry_passed": true,
+      "cost_identities_passed": true,
+      "hashes": {
+        "manifest.json": "dd7ffd8ff6ce9de053a9326e3fbddf3e8e16afd1828ae7aec56a041b2a39423a",
+        "DONE.json": "4393cf99f227011ed3ab9d4a24cff78906fdffa156a03e6d856cd95e1f07c166",
+        "evaluations.npz": "995faff5e18f15cafdf73d0fe3a835f8e4d35b88d2b02d25db9cbeb6565c3477",
+        "trace.json": "466a6a0dc8f37807223ff35d12d7717f4979f571e7d56d690f73909dbf3296c1"
+      },
+      "independent_HV": 0.1708225433748025,
+      "HV_error": 2.7755575615628914e-17
+    },
+    {
+      "id": "ridge_1600_s1103_CCGDE3_problem",
+      "layouts_checked": 10000,
+      "feasible_layouts": 10000,
+      "unique_feasible_layouts": 9010,
+      "exact_front_matched": true,
+      "independent_geometry_passed": true,
+      "cost_identities_passed": true,
+      "hashes": {
+        "manifest.json": "f6de56d2dda6e3f563df26519cb9dfae95dcaf86dd11493158dbcf87fb2799df",
+        "DONE.json": "33c2b12880e21df5aa6bb78b529ede5c6469b5fc606a3e5cde523769d48beb66",
+        "evaluations.npz": "e4bb591b186d38d2819f2d08029f349f2b07ea205e1565aa52ca9df14b6423da",
+        "trace.json": "79af0a4e8603db642cbe8eb26c3e71e9907593b8209cb3d84bf7b9a8f25a45a8"
+      },
+      "independent_HV": 0.17549888079136253,
+      "HV_error": 2.7755575615628914e-17
+    },
+    {
+      "id": "ridge_1600_s1103_LMOCSO",
+      "layouts_checked": 10000,
+      "feasible_layouts": 10000,
+      "unique_feasible_layouts": 1537,
+      "exact_front_matched": true,
+      "independent_geometry_passed": true,
+      "cost_identities_passed": true,
+      "hashes": {
+        "manifest.json": "b945b76305231ceb14ae4e1b086f4ddae8c97ce0068f7bc1ce17320eb35cf9ab",
+        "DONE.json": "50ceec020ee8522970a890ecfb8781d9f6f7a62fe75db2645a4c0df1e7319ac5",
+        "evaluations.npz": "123c68cfc9d1eb30f6c0408ceef1acfd63cf7f1069d20a5901be8be740b730a7",
+        "trace.json": "98a613937866999ad39f5bf5c427a7c27b9eb9dfdd659d25a9ac722745fa004e"
+      },
+      "independent_HV": 0.08731630396773876,
+      "HV_error": 2.7755575615628914e-17
+    },
+    {
+      "id": "ridge_1600_s1103_LMOCSO_problem",
+      "layouts_checked": 10000,
+      "feasible_layouts": 10000,
+      "unique_feasible_layouts": 5353,
+      "exact_front_matched": true,
+      "independent_geometry_passed": true,
+      "cost_identities_passed": true,
+      "hashes": {
+        "manifest.json": "d5af85be749956da9587207298f9631184b1a2ad2ed7a5d7d0f56a6f37e72601",
+        "DONE.json": "c7ed2bc9cea86cf5f7d0e5c106934802cfbcff7fb27c6defa53ad88211057298",
+        "evaluations.npz": "bdc04b0a5567b48c1cb6d089dff81bf0abd637ace3679450ee9ca47ebc272912",
+        "trace.json": "d8b690567c7215f4d92c37a90d7bf12664497ab738c9092f0b8f4b918b3751de"
+      },
+      "independent_HV": 0.32919294996136567,
+      "HV_error": 5.551115123125783e-17
+    },
+    {
+      "id": "ridge_1600_s1104_CCGDE3_problem",
+      "layouts_checked": 10000,
+      "feasible_layouts": 10000,
+      "unique_feasible_layouts": 9038,
+      "exact_front_matched": true,
+      "independent_geometry_passed": true,
+      "cost_identities_passed": true,
+      "hashes": {
+        "manifest.json": "333eb97320bffae47624d94d471ff318beaaf664afe3f06b4f1982adc27fb9c0",
+        "DONE.json": "ea09bdf71fd90ed63c5b5397c543537493f00abbeb04867929f6b0032933201b",
+        "evaluations.npz": "d9035b76ac94bcc9bb65139e623efcf019f3efcd7e575dafa7ad12b859b235b6",
+        "trace.json": "9673310f7c2c1b4f36d125a6b3223b55237e65a83b6a3e2fd3c57ac9ba59e413"
+      },
+      "independent_HV": 0.17175613828136715,
+      "HV_error": 2.7755575615628914e-17
+    },
+    {
+      "id": "ridge_1600_s1104_CCGDE3",
+      "layouts_checked": 10000,
+      "feasible_layouts": 10000,
+      "unique_feasible_layouts": 9846,
+      "exact_front_matched": true,
+      "independent_geometry_passed": true,
+      "cost_identities_passed": true,
+      "hashes": {
+        "manifest.json": "361fcf817584be7cd020042a1ba7ec941381ed8948058db55fb823e9a46e626b",
+        "DONE.json": "f12d324a8f39486d60d64ec87a49475f790f02d89bfd04c39d9d798eac84a4fe",
+        "evaluations.npz": "c9dc817c0b4d95fc28b7d16ed142212ad95fd6bd3741e7382227eace1d61ca5c",
+        "trace.json": "f0a2c0bd1472ed7bd771053226a1adb0397b194ed972acf27cd206e2ff930412"
+      },
+      "independent_HV": 0.1623895757514729,
+      "HV_error": 5.551115123125783e-17
+    },
+    {
+      "id": "ridge_1600_s1104_LMOCSO_problem",
+      "layouts_checked": 10000,
+      "feasible_layouts": 10000,
+      "unique_feasible_layouts": 4499,
+      "exact_front_matched": true,
+      "independent_geometry_passed": true,
+      "cost_identities_passed": true,
+      "hashes": {
+        "manifest.json": "944ceae93ceaef2ede085f6ccef56dacd36357d2d97a6bf1386152d8d7a03f13",
+        "DONE.json": "05955f2e0bc95bc640707e9df17cfb58f87b095c336d865e866d4174d17b95f4",
+        "evaluations.npz": "4faa51c11399e6bf3d882433878e4a0887af6aba37f25b64c52a85ee20f5c6e0",
+        "trace.json": "510dc25bb884a3e46980ca90eb74e7594bf22787e0c40abeb9f0a796ee08e5d8"
+      },
+      "independent_HV": 0.42220928714217887,
+      "HV_error": 0.0
+    },
+    {
+      "id": "ridge_1600_s1104_LMOCSO",
+      "layouts_checked": 10000,
+      "feasible_layouts": 10000,
+      "unique_feasible_layouts": 2574,
+      "exact_front_matched": true,
+      "independent_geometry_passed": true,
+      "cost_identities_passed": true,
+      "hashes": {
+        "manifest.json": "efa5b1c6e8545ec32cc349f4a6adf724952da2fdc363a1287a52a07c99ee5f33",
+        "DONE.json": "e2fe92f5d88461f78cf412eb7fa3bf6c89bdb8ee0269cc94d23eca8943b621d6",
+        "evaluations.npz": "114e24e0bebb5a4764c8487f74973e72e3fe79711aadf3801ff2c72bf4e4388e",
+        "trace.json": "d8459867ab59fcd86a3dba1a93ac58c1677e44d6f0bc660cbbbd99b112bccc90"
+      },
+      "independent_HV": 0.07721196832747639,
+      "HV_error": 1.3877787807814457e-17
+    },
+    {
+      "id": "ridge_1600_s1104_DGEA_problem",
+      "layouts_checked": 10000,
+      "feasible_layouts": 10000,
+      "unique_feasible_layouts": 6483,
+      "exact_front_matched": true,
+      "independent_geometry_passed": true,
+      "cost_identities_passed": true,
+      "hashes": {
+        "manifest.json": "7f64671a8e517642dc6ca090188f69ab7895dc03c384f3c46f127b47f5554921",
+        "DONE.json": "d66521eba09f38d7cdb1e5da7ff33fa59035045d67b555ba6ce5d7134e02dbe1",
+        "evaluations.npz": "ec21dc27f666eb845cf5fa4f20604bcdf5927200afa3a3217ad3aa5aa3bd53d0",
+        "trace.json": "8c16e5078c2a36855565617c5cf80ae17b4e77ad1ff27f17f496777a93f4a036"
+      },
+      "independent_HV": 0.3271072393435442,
+      "HV_error": 0.0
+    },
+    {
+      "id": "ridge_1600_s1104_DGEA",
+      "layouts_checked": 10000,
+      "feasible_layouts": 10000,
+      "unique_feasible_layouts": 7264,
+      "exact_front_matched": true,
+      "independent_geometry_passed": true,
+      "cost_identities_passed": true,
+      "hashes": {
+        "manifest.json": "fd94f9edfcd0e3aed139b2c1ca2ea45393d0c40248830e76ced1d8cd46180224",
+        "DONE.json": "a2b5a3d7aa3f6d4fb25daa7dc8048840d44fc446623ac7590124e6abcf45812a",
+        "evaluations.npz": "7ef237786f1d5fd435107bd216dfbd6231438e8e40515d07caf353910f4f874d",
+        "trace.json": "72b884097a2f38d470407f79f016274ab4aacfd6602804ca58badf423d172dfc"
+      },
+      "independent_HV": 0.09957925219248323,
+      "HV_error": 1.3877787807814457e-17
+    },
+    {
+      "id": "ridge_1600_s1105_LMOCSO",
+      "layouts_checked": 10000,
+      "feasible_layouts": 10000,
+      "unique_feasible_layouts": 2423,
+      "exact_front_matched": true,
+      "independent_geometry_passed": true,
+      "cost_identities_passed": true,
+      "hashes": {
+        "manifest.json": "b440244c4424f4503dfa0232eb2c8cfe9bcb3af6d31fbaf3b19f598a61bb7f5d",
+        "DONE.json": "7f8dc0451eee7b01a3d7684d223cac6c9ce35961cacf8c8e327990f6ffa17385",
+        "evaluations.npz": "9541ab8ea47ffbafa1bc9feea13fa8d53f7ff56596ff2e88b9619ceeb2688676",
+        "trace.json": "a8b26e7c684f62e4b59e15812a3d0089abba0409864f782763cf7da5f511e57e"
+      },
+      "independent_HV": 0.06949124446608465,
+      "HV_error": 1.3877787807814457e-17
+    },
+    {
+      "id": "ridge_1600_s1105_LMOCSO_problem",
+      "layouts_checked": 10000,
+      "feasible_layouts": 10000,
+      "unique_feasible_layouts": 5497,
+      "exact_front_matched": true,
+      "independent_geometry_passed": true,
+      "cost_identities_passed": true,
+      "hashes": {
+        "manifest.json": "d44956ef9a98a64c8a4022e9f656f56adb7152941fd092b88e2f63be46c3b9f0",
+        "DONE.json": "47ec6e9d211a0bb58ec6f9372d54c9168c92a95a0c21140734ad05c2316bd458",
+        "evaluations.npz": "549efa2b40747b1113c1e8d53e0c9b151ce2ecabbb1ebb39267bb1bc8ec97b91",
+        "trace.json": "bd32254ab3191088be249ab44f5d339b1da136c481b98ba2a9cfa2e2d282ca00"
+      },
+      "independent_HV": 0.3828937840082521,
+      "HV_error": 2.220446049250313e-16
+    },
+    {
+      "id": "ridge_1600_s1105_DGEA",
+      "layouts_checked": 10000,
+      "feasible_layouts": 10000,
+      "unique_feasible_layouts": 7412,
+      "exact_front_matched": true,
+      "independent_geometry_passed": true,
+      "cost_identities_passed": true,
+      "hashes": {
+        "manifest.json": "c26668afb50097c25b03665645d46d99409a89a0dd0e3c263fc760195a6d5058",
+        "DONE.json": "1a2cc673cfc080dbb2756ceb08b0c7d9a135cd53261ee41b7720aeb397f23131",
+        "evaluations.npz": "adc983f99d888d39238ff6a45980ed25e759d781e645f2be2a7acd2d90d36949",
+        "trace.json": "55cd72f450d1b3a6371ac2c465dffdb434decdc1ee780e87986afce783a95049"
+      },
+      "independent_HV": 0.08723933974567821,
+      "HV_error": 0.0
+    },
+    {
+      "id": "ridge_1600_s1105_DGEA_problem",
+      "layouts_checked": 10000,
+      "feasible_layouts": 10000,
+      "unique_feasible_layouts": 7197,
+      "exact_front_matched": true,
+      "independent_geometry_passed": true,
+      "cost_identities_passed": true,
+      "hashes": {
+        "manifest.json": "9f57bbee46c32294276e72ddea204939dede604c60738dbe15d1704966fe74d1",
+        "DONE.json": "04a6a7690a983d29c03c7992d8ade11a275e0304b76d509fcda11031766c17b1",
+        "evaluations.npz": "355aaf97805a0127717fe32d32dc66e4e1a3ad68f9a4242328838d6adbc75785",
+        "trace.json": "518f794f81faf887d6774943689135012618cadd420be3a8afe25476fc8140fe"
+      },
+      "independent_HV": 0.37575997424172014,
+      "HV_error": 1.1102230246251565e-16
+    },
+    {
+      "id": "ridge_1600_s1105_CCGDE3",
+      "layouts_checked": 10000,
+      "feasible_layouts": 10000,
+      "unique_feasible_layouts": 9856,
+      "exact_front_matched": true,
+      "independent_geometry_passed": true,
+      "cost_identities_passed": true,
+      "hashes": {
+        "manifest.json": "de28854fcd8136f09434ca5caab5b29a2881a0f8e9d0071923aef95fb09cef27",
+        "DONE.json": "793d17851b44b19b750ac168b6fa1e5c8e69984c224d6079102bcc78c36c3c92",
+        "evaluations.npz": "af269b5aa3c7a79f6206cc35b658efec860ca6cf55e0170ab65554649f4b911b",
+        "trace.json": "cc5911ee1aee9be6db3800e888656c81aab8273bc091d52d3876e24f7467d608"
+      },
+      "independent_HV": 0.16634024430168462,
+      "HV_error": 2.7755575615628914e-17
+    },
+    {
+      "id": "ridge_1600_s1105_CCGDE3_problem",
+      "layouts_checked": 10000,
+      "feasible_layouts": 10000,
+      "unique_feasible_layouts": 9125,
+      "exact_front_matched": true,
+      "independent_geometry_passed": true,
+      "cost_identities_passed": true,
+      "hashes": {
+        "manifest.json": "6ed09fa803e6c6bd8ff4275a0ed1d5ea37408a32970ddab5898119726a278077",
+        "DONE.json": "bbfe6b0384c7780ced12a9cdff35286ba30587de844497b4a737a567aea7c301",
+        "evaluations.npz": "8bded9f5fe8a389b914f95276c4124bc9f171fccde2cdac50be0a306b023106c",
+        "trace.json": "1b7176018120a3e009f3913bc0f714175c3e78fe048650423f6346176173e046"
+      },
+      "independent_HV": 0.1776742801944636,
+      "HV_error": 2.7755575615628914e-17
+    },
+    {
+      "id": "ridge_1600_s1106_DGEA_problem",
+      "layouts_checked": 10000,
+      "feasible_layouts": 10000,
+      "unique_feasible_layouts": 6421,
+      "exact_front_matched": true,
+      "independent_geometry_passed": true,
+      "cost_identities_passed": true,
+      "hashes": {
+        "manifest.json": "a79e325a9bdb09d061d3a38e27be471ea789610d7f3cc5f586a091c075897695",
+        "DONE.json": "01ea041d34cc8154d12080ecfed1287cb854f1581c4bfa655af8004a43964454",
+        "evaluations.npz": "e41ba4ec2abc92ff7ab01c5bf9b5bf8820a85ba5b15f7d4f867aa0e4c34793dd",
+        "trace.json": "c24f1dbe4e4740d64f94ed8bfd5c3a171ec7dc0dd951eeed5f134050a7c04c7f"
+      },
+      "independent_HV": 0.3468791049796722,
+      "HV_error": 5.551115123125783e-17
+    },
+    {
+      "id": "ridge_1600_s1106_DGEA",
+      "layouts_checked": 10000,
+      "feasible_layouts": 10000,
+      "unique_feasible_layouts": 6978,
+      "exact_front_matched": true,
+      "independent_geometry_passed": true,
+      "cost_identities_passed": true,
+      "hashes": {
+        "manifest.json": "12a56995c9d386c85a70aadb15669225752e7bb80eee3aae5b94350979bf26e2",
+        "DONE.json": "cd61fbccb1ab07341b98ffa36663d4311345a1967a6d899e1f5814f9555acc19",
+        "evaluations.npz": "15e2d3182971acead6ec5d54fba47487c7a54a563d9bf71e6f02929dcf4e6ccb",
+        "trace.json": "2becf888eeeb9fd6e6db120da19dc2d5bb262899bc37bee4fc6a27544dd562fb"
+      },
+      "independent_HV": 0.09813309759348898,
+      "HV_error": 1.3877787807814457e-17
+    },
+    {
+      "id": "ridge_1600_s1106_CCGDE3_problem",
+      "layouts_checked": 10000,
+      "feasible_layouts": 10000,
+      "unique_feasible_layouts": 9079,
+      "exact_front_matched": true,
+      "independent_geometry_passed": true,
+      "cost_identities_passed": true,
+      "hashes": {
+        "manifest.json": "bb4e22c1c7f9ea839037ac0eaaad519c919aeeb451b247ab405669425f25768b",
+        "DONE.json": "d4154ed153d090a68542a5d036ef106abf9b9ce4605e6aa7a346211a1ba235ad",
+        "evaluations.npz": "b337a06abe4b777d1217d2e47e2f8c8055d0b11e0088457162617a0064219207",
+        "trace.json": "9f277cdd71eb96fccfd86596035c7ab49143d7f1ebf3b7ce2b35ff87ec6c58c1"
+      },
+      "independent_HV": 0.17740054826456886,
+      "HV_error": 5.551115123125783e-17
+    },
+    {
+      "id": "ridge_1600_s1106_CCGDE3",
+      "layouts_checked": 10000,
+      "feasible_layouts": 10000,
+      "unique_feasible_layouts": 9866,
+      "exact_front_matched": true,
+      "independent_geometry_passed": true,
+      "cost_identities_passed": true,
+      "hashes": {
+        "manifest.json": "c2908d5211d53bd99d53f0bc2cb64d47072396bcfbba6199f0eacf12b1a55742",
+        "DONE.json": "68b86ae84a78df897b11dd4a1c65beda1c88ba2d2fdd6aeba9c3a59abd7c49ec",
+        "evaluations.npz": "75208f0d750084e12af452427c67d4ae1b93a82f3f10eb9c5010321a5b782554",
+        "trace.json": "7c1983f171001b9211d3c3cec0c152cc3c201f6b8f76948eb78d7336b8d1a3cb"
+      },
+      "independent_HV": 0.18063905383432638,
+      "HV_error": 1.1102230246251565e-16
+    },
+    {
+      "id": "ridge_1600_s1106_LMOCSO_problem",
+      "layouts_checked": 10000,
+      "feasible_layouts": 10000,
+      "unique_feasible_layouts": 5230,
+      "exact_front_matched": true,
+      "independent_geometry_passed": true,
+      "cost_identities_passed": true,
+      "hashes": {
+        "manifest.json": "311768bffba5da00dbf30e3e58bb5e984b0d136c5ee41cb13c8c1a81064b5b3c",
+        "DONE.json": "2a3cb7ec2c9368fe18d12973b9994eeecec08896689d4e3f2abf0d66cc462947",
+        "evaluations.npz": "e5d345960a340b24b3e2b7c69fb9f072a9d0b9f0e295545926f16532ea204dd1",
+        "trace.json": "9c34a36af761cdb456bbd9b0428bea602ccd50e4c6cd79765d1918c8c79a0f75"
+      },
+      "independent_HV": 0.40109005766615,
+      "HV_error": 1.1102230246251565e-16
+    },
+    {
+      "id": "ridge_1600_s1106_LMOCSO",
+      "layouts_checked": 10000,
+      "feasible_layouts": 10000,
+      "unique_feasible_layouts": 2633,
+      "exact_front_matched": true,
+      "independent_geometry_passed": true,
+      "cost_identities_passed": true,
+      "hashes": {
+        "manifest.json": "486a463d2708e29bd1aee0d263f5ca362ce10081a93c3718ff007b61d030f3f6",
+        "DONE.json": "33b279930106c7833e6808e4fc06261507b93eab01318f3cc751579fafaff674",
+        "evaluations.npz": "435f034f16b6442fb470e18b837cdda30d4aa2b0ea72d8866e92cf043bd89bc4",
+        "trace.json": "0a5137d938cdb435c55ea9e33be129e375d5bd01d2a8e97d76b9028f63722615"
+      },
+      "independent_HV": 0.07484880072819858,
+      "HV_error": 0.0
+    },
+    {
+      "id": "ridge_1600_s1107_CCGDE3",
+      "layouts_checked": 10000,
+      "feasible_layouts": 10000,
+      "unique_feasible_layouts": 9874,
+      "exact_front_matched": true,
+      "independent_geometry_passed": true,
+      "cost_identities_passed": true,
+      "hashes": {
+        "manifest.json": "91a398a4db44963a8da8d95cf97d3399425dbbfbba4a17c5b533e3addbc003ef",
+        "DONE.json": "206ce3f2003083dd5529c2df510d250b61515705c5029fd2dcb6fb5d90147f95",
+        "evaluations.npz": "cdc355962efa021f350aa3f8e8fbe1aaa475b1a7bef6d4a17dcb9ae3e9849ac5",
+        "trace.json": "d76e771c8a43e800c5e6f6523e9ed9e2461bd127ac82951f8c8fda8654e4191d"
+      },
+      "independent_HV": 0.15836221502550296,
+      "HV_error": 2.7755575615628914e-17
+    },
+    {
+      "id": "ridge_1600_s1107_CCGDE3_problem",
+      "layouts_checked": 10000,
+      "feasible_layouts": 10000,
+      "unique_feasible_layouts": 8990,
+      "exact_front_matched": true,
+      "independent_geometry_passed": true,
+      "cost_identities_passed": true,
+      "hashes": {
+        "manifest.json": "52a5ccb1d29467205052310eafbe1f117234b46161ab1ad2c604966832567869",
+        "DONE.json": "df5841fc8f9fb73f08aeff496ffb6e37e19598aa959ce7dd33fa0e45fb6704fc",
+        "evaluations.npz": "398f40e7666bda58cbb7dd69e4ed1ef5ce2b7f1a138db55be22132b16c34be96",
+        "trace.json": "1ecc819eb1871a8a546cc7a89ac5ee93682c2aeceae4cd8fdf76963422bfa3e3"
+      },
+      "independent_HV": 0.19171873213109472,
+      "HV_error": 5.551115123125783e-17
+    },
+    {
+      "id": "ridge_1600_s1107_LMOCSO",
+      "layouts_checked": 10000,
+      "feasible_layouts": 10000,
+      "unique_feasible_layouts": 1761,
+      "exact_front_matched": true,
+      "independent_geometry_passed": true,
+      "cost_identities_passed": true,
+      "hashes": {
+        "manifest.json": "aabe0d12cb6a3ad86e0b8e82be08812c8395dea10b07c079ee3fac9006db931d",
+        "DONE.json": "6d5ac635804869a049160bc4ede7c7fe62f2261b6bef159a87c9e7d1d46375a1",
+        "evaluations.npz": "71cc3838069fbbca7a7e3897ec01a828f058a9154cab1de1eb6f3368284e9ac1",
+        "trace.json": "5884f203acbe90aba1dd5d8e66dd0ce349bd0c4279d22d620cafd974071f7233"
+      },
+      "independent_HV": 0.06882762685685383,
+      "HV_error": 1.3877787807814457e-17
+    },
+    {
+      "id": "ridge_1600_s1107_LMOCSO_problem",
+      "layouts_checked": 10000,
+      "feasible_layouts": 10000,
+      "unique_feasible_layouts": 5171,
+      "exact_front_matched": true,
+      "independent_geometry_passed": true,
+      "cost_identities_passed": true,
+      "hashes": {
+        "manifest.json": "db6573d27e2a5cce86c022788a25143492b6cc137167ea4a260c0158ba473fc2",
+        "DONE.json": "dd2607c67f67977b2bc2e89d82f63677c33da8fdc7df1c464a7bf3d8a0ad151a",
+        "evaluations.npz": "e98c9c76fe84a75c396da3616f087aa422a380f1207e79f36d396d2a625f0895",
+        "trace.json": "ba075d506349008d514335e7cfb2f6b6ceed48c352e12358cc5c889063e67467"
+      },
+      "independent_HV": 0.3303016933542845,
+      "HV_error": 1.6653345369377348e-16
+    },
+    {
+      "id": "ridge_1600_s1107_DGEA",
+      "layouts_checked": 10000,
+      "feasible_layouts": 10000,
+      "unique_feasible_layouts": 7889,
+      "exact_front_matched": true,
+      "independent_geometry_passed": true,
+      "cost_identities_passed": true,
+      "hashes": {
+        "manifest.json": "b377940815620b15b3241b918c7943a891247b632da600eea201593b0948fe6d",
+        "DONE.json": "73f88431d464146f2e7f911db9b06e963ce12a84320c28ad81cbc786daeda479",
+        "evaluations.npz": "b8233f74c1087181893688e6a70164dc71d95e335860016fb220e81019356e6f",
+        "trace.json": "5bb8c9c7a55a4fdb39a0997df5ddd90c35e3b4484d741c250b550f5341c62c68"
+      },
+      "independent_HV": 0.09119800926065533,
+      "HV_error": 0.0
+    },
+    {
+      "id": "ridge_1600_s1107_DGEA_problem",
+      "layouts_checked": 10000,
+      "feasible_layouts": 10000,
+      "unique_feasible_layouts": 6948,
+      "exact_front_matched": true,
+      "independent_geometry_passed": true,
+      "cost_identities_passed": true,
+      "hashes": {
+        "manifest.json": "a3a5904687f17fc3c0df83b408191ba5caa1c836a3096dde05456274c881cdc9",
+        "DONE.json": "8a70f03a0bdf3f0f210e4e39cce21a899e1f141495d426650a768ae0802db264",
+        "evaluations.npz": "88f431beec9ea100d951453960ec7302cfa771dcae089d47202e173ffa6d4f3d",
+        "trace.json": "3055f2e86cd0b56eea9d18456babd8f7345d42b815219a3074f168ecea19ee29"
+      },
+      "independent_HV": 0.3414113001578052,
+      "HV_error": 0.0
+    },
+    {
+      "id": "ridge_1600_s1108_LMOCSO_problem",
+      "layouts_checked": 10000,
+      "feasible_layouts": 10000,
+      "unique_feasible_layouts": 5275,
+      "exact_front_matched": true,
+      "independent_geometry_passed": true,
+      "cost_identities_passed": true,
+      "hashes": {
+        "manifest.json": "7cecb117488c5bca7e144acf7f7f80d875b144e8cb2749ad853ac89d29dd4ce3",
+        "DONE.json": "ff1b7381cc74c4dee02183c9a19771f4b77182cbb3f89f2bed0404dcfcd5ea91",
+        "evaluations.npz": "39ae51df582a7f87262de637225d2a5ba8094919ee556d9be144e7b492a0953f",
+        "trace.json": "cc3f7f2734fa8e65f5ffa6d47764101e96d63d218305cd75e581658b586a8789"
+      },
+      "independent_HV": 0.3944297841148322,
+      "HV_error": 2.220446049250313e-16
+    },
+    {
+      "id": "ridge_1600_s1108_LMOCSO",
+      "layouts_checked": 10000,
+      "feasible_layouts": 10000,
+      "unique_feasible_layouts": 2467,
+      "exact_front_matched": true,
+      "independent_geometry_passed": true,
+      "cost_identities_passed": true,
+      "hashes": {
+        "manifest.json": "bed47e86eca2746d2227f3aac41869f868c42046ed5ddb15e66f8b8fad5cacf3",
+        "DONE.json": "bf247d7b0adecad2e24ce22dc358f3fc1146236a96bc1e0c29c7656c9f374f20",
+        "evaluations.npz": "1080f4b99d85b8f647f77dc62cb467df250d97d34d7e675e8d4e16aaa138384b",
+        "trace.json": "746a71884b92ef5969f39a6e3bd2206cb7436121a7f3f7b8f2800273f13964cb"
+      },
+      "independent_HV": 0.09173526387510564,
+      "HV_error": 1.3877787807814457e-17
+    },
+    {
+      "id": "ridge_1600_s1108_DGEA_problem",
+      "layouts_checked": 10000,
+      "feasible_layouts": 10000,
+      "unique_feasible_layouts": 6882,
+      "exact_front_matched": true,
+      "independent_geometry_passed": true,
+      "cost_identities_passed": true,
+      "hashes": {
+        "manifest.json": "dbf558caf170bc8e347af5a7ff1160951511c6fc349a83ba47f8be6e6e62970a",
+        "DONE.json": "d6c5760d996cd542dfde9e4696876aad45d20ff5598e32e580845e8c0e48cfdd",
+        "evaluations.npz": "fe264e8a0e3cd42d406671581569a37be0bd7e9c747bef4462a7bc2c5f2980a4",
+        "trace.json": "f2fa88dee76aed2449ea5534d3ede50ed1810575e9139367a61fd0ebe49cab70"
+      },
+      "independent_HV": 0.3713405645069401,
+      "HV_error": 5.551115123125783e-17
+    },
+    {
+      "id": "ridge_1600_s1108_DGEA",
+      "layouts_checked": 10000,
+      "feasible_layouts": 10000,
+      "unique_feasible_layouts": 7459,
+      "exact_front_matched": true,
+      "independent_geometry_passed": true,
+      "cost_identities_passed": true,
+      "hashes": {
+        "manifest.json": "c25c60437ebc8f99c9b09b2e4c83e13f89e172873eed2203d09c4aebc5cc12d0",
+        "DONE.json": "f711f4d6f67ae9e3fc3917e36f940433a700541fc055f6709dface9bd092b601",
+        "evaluations.npz": "55a3c24539ea7a464c21c22c96a8dc0eecafb21dda715d6d81cc079b5f763993",
+        "trace.json": "b9af3fea20ff24e29bcfc0b80f87effb4d29b9bda5b62a031aaa12f8d2372bfc"
+      },
+      "independent_HV": 0.08801932685698992,
+      "HV_error": 1.3877787807814457e-17
+    },
+    {
+      "id": "ridge_1600_s1108_CCGDE3_problem",
+      "layouts_checked": 10000,
+      "feasible_layouts": 10000,
+      "unique_feasible_layouts": 9087,
+      "exact_front_matched": true,
+      "independent_geometry_passed": true,
+      "cost_identities_passed": true,
+      "hashes": {
+        "manifest.json": "83b1173a927b3bfa783cc356ffe079e643e42d33cdfc81dce728a25e9877dbe3",
+        "DONE.json": "af9b703823ee2f7731efbb8f530d28e0ccabe340f0952905e0116c805a673677",
+        "evaluations.npz": "1c2e645860a283a7b63f730ce79ec5d2354e624374230cf7050d24515d9882a7",
+        "trace.json": "49e64e5ad2565d26a7d530bcd12974805800b1ccea8e44e4cc3103a10f3654fc"
+      },
+      "independent_HV": 0.1901351105182138,
+      "HV_error": 1.1102230246251565e-16
+    },
+    {
+      "id": "ridge_1600_s1108_CCGDE3",
+      "layouts_checked": 10000,
+      "feasible_layouts": 10000,
+      "unique_feasible_layouts": 9848,
+      "exact_front_matched": true,
+      "independent_geometry_passed": true,
+      "cost_identities_passed": true,
+      "hashes": {
+        "manifest.json": "e31d321acfeede78524490246078cd2c0811757a89836ba071a5a20450ac9661",
+        "DONE.json": "9df9ef151f174d939ea3df766b06ac7e56c6d14ca0b6d3d25859fc64f418991d",
+        "evaluations.npz": "41613be9a72a0d605fe7f5999c8cfbc7524c866f00c4abd2f24da66e72fad2f8",
+        "trace.json": "145ae4b6c648c9c4c320fad6e134daab34df0fa0e344643c7e46ec28b3cdf128"
+      },
+      "independent_HV": 0.17336036651172287,
+      "HV_error": 0.0
+    },
+    {
+      "id": "ridge_1600_s1109_DGEA",
+      "layouts_checked": 10000,
+      "feasible_layouts": 10000,
+      "unique_feasible_layouts": 7123,
+      "exact_front_matched": true,
+      "independent_geometry_passed": true,
+      "cost_identities_passed": true,
+      "hashes": {
+        "manifest.json": "e25e6832ccbea576908bbfd82d76435f489b8267845805f1146126dc1445daf3",
+        "DONE.json": "b71e03cb3f38dedc1c5831752aecf4e771b6141633f611fbae7f44c1890dfd27",
+        "evaluations.npz": "05820249fb2ae4c61c7e3eee2c732bf64209c753d6123b60c15c84825eb03226",
+        "trace.json": "384b052d54c22935eed13c96eba0bdf18af5d8d58677578169769d9993c7a310"
+      },
+      "independent_HV": 0.08730032149630157,
+      "HV_error": 1.3877787807814457e-17
+    },
+    {
+      "id": "ridge_1600_s1109_DGEA_problem",
+      "layouts_checked": 10000,
+      "feasible_layouts": 10000,
+      "unique_feasible_layouts": 7328,
+      "exact_front_matched": true,
+      "independent_geometry_passed": true,
+      "cost_identities_passed": true,
+      "hashes": {
+        "manifest.json": "e226da9ac01bb6cb9a15bdfab073aa3a52d87c054b2685122589e2b88229e866",
+        "DONE.json": "44301040e5687dcd1007a8c1023e60ec991578f558ec63b707b3f323bac0d0a3",
+        "evaluations.npz": "063d53677a616b02d3058e97d207ca6434c61c6db77776643d252a7e3af2e029",
+        "trace.json": "171b6fff8cd9c08f6ab8b7c4a86bd9c041ce9f21e6862de88384e2324ffdb5c2"
+      },
+      "independent_HV": 0.36923894814874186,
+      "HV_error": 5.551115123125783e-17
+    },
+    {
+      "id": "ridge_1600_s1109_CCGDE3",
+      "layouts_checked": 10000,
+      "feasible_layouts": 10000,
+      "unique_feasible_layouts": 9853,
+      "exact_front_matched": true,
+      "independent_geometry_passed": true,
+      "cost_identities_passed": true,
+      "hashes": {
+        "manifest.json": "edf95e65fac1fa96b7bf11eff6128c59cc96ec201b06a5945cf71b0d80f093f1",
+        "DONE.json": "91598414f3b13f5b744cef7644b9a1405979fafccd49b8615735cb114aa14e9b",
+        "evaluations.npz": "d677b30e56940965e0fdb167f6176a61e22d7d03bdcbdfc7a8bf6d420853669a",
+        "trace.json": "0e8aebe2d6b7ba5b3a196ad13f8eea5a508aadd793a72cb24abb70b73b94bbc3"
+      },
+      "independent_HV": 0.15620297273665787,
+      "HV_error": 2.7755575615628914e-17
+    },
+    {
+      "id": "ridge_1600_s1109_CCGDE3_problem",
+      "layouts_checked": 10000,
+      "feasible_layouts": 10000,
+      "unique_feasible_layouts": 9131,
+      "exact_front_matched": true,
+      "independent_geometry_passed": true,
+      "cost_identities_passed": true,
+      "hashes": {
+        "manifest.json": "ed34d4da08eb082d556f77273263a14e7ce70b8be67fe44d3be7b6c96058e88c",
+        "DONE.json": "08b41fb1d691cf5f22e9f94a878b7fd0b8553377f9230beab209c349c471ad01",
+        "evaluations.npz": "01530610d94fea2901f1f6553091fa6b009ee02a2df58a958ca576e681feef35",
+        "trace.json": "2466a6ef8b33a5f355336d209b65563965a59844bd0518043e75016f274d5c17"
+      },
+      "independent_HV": 0.18425062557209532,
+      "HV_error": 5.551115123125783e-17
+    },
+    {
+      "id": "ridge_1600_s1109_LMOCSO",
+      "layouts_checked": 10000,
+      "feasible_layouts": 10000,
+      "unique_feasible_layouts": 1999,
+      "exact_front_matched": true,
+      "independent_geometry_passed": true,
+      "cost_identities_passed": true,
+      "hashes": {
+        "manifest.json": "80edff4e52f73fd0e7322ef77a86bbe5fb1b062281c37d8befaf047f06101e5d",
+        "DONE.json": "9f35f5a522f283058e714a3685ef3d2d67cdeeee9a2e29cf4c8842a4039a88f0",
+        "evaluations.npz": "954b23a39fe7bc19622894116b8333e842dfd3dcee0cf8abceff48450a48a453",
+        "trace.json": "d3624e3b5cf77b1511e1a5259abd7c737f03f1562e150834dc0caf26dce9c1b3"
+      },
+      "independent_HV": 0.08376412968576204,
+      "HV_error": 1.3877787807814457e-17
+    },
+    {
+      "id": "ridge_1600_s1109_LMOCSO_problem",
+      "layouts_checked": 10000,
+      "feasible_layouts": 10000,
+      "unique_feasible_layouts": 5206,
+      "exact_front_matched": true,
+      "independent_geometry_passed": true,
+      "cost_identities_passed": true,
+      "hashes": {
+        "manifest.json": "9d5ca164327c424cc33b339519a61bbbb3eaef57e9195fed618325533b874e56",
+        "DONE.json": "4d19e1e392fce07b96502d71535580efa5403528eb351c895caec31eef506cf8",
+        "evaluations.npz": "417b7f03122d443c8cf1d4933f9c6770a6f1ca16c9dfc2b10eb853de8c021c6d",
+        "trace.json": "ac085f937926344de98b1967e1756f2992288c65eeb9ec97df7cc7c7feb5167e"
+      },
+      "independent_HV": 0.419089853884972,
+      "HV_error": 2.220446049250313e-16
+    },
+    {
+      "id": "ridge_1600_s1110_CCGDE3_problem",
+      "layouts_checked": 10000,
+      "feasible_layouts": 10000,
+      "unique_feasible_layouts": 9117,
+      "exact_front_matched": true,
+      "independent_geometry_passed": true,
+      "cost_identities_passed": true,
+      "hashes": {
+        "manifest.json": "9b8fa21f1c4f931a03500e58f167c59678dcc36b1d7e6b8a6c4d919da19a3554",
+        "DONE.json": "fc7d9c0dcb231afa177f7a2b354b2f8e983933dedda1184d8471fd8004e8b3d2",
+        "evaluations.npz": "65122b639daea9ec9fdadd5752f0635bd2c1a9a466cb0f857bf182e822629c8b",
+        "trace.json": "20fee10e832ac6584d8d0ab8ebe9a7503de6a31882d692a7bc3f6208605574f1"
+      },
+      "independent_HV": 0.1831891053701319,
+      "HV_error": 0.0
+    },
+    {
+      "id": "ridge_1600_s1110_CCGDE3",
+      "layouts_checked": 10000,
+      "feasible_layouts": 10000,
+      "unique_feasible_layouts": 9827,
+      "exact_front_matched": true,
+      "independent_geometry_passed": true,
+      "cost_identities_passed": true,
+      "hashes": {
+        "manifest.json": "9150447341d1a520c5b670359c41efd1f59021c2f26159148be5f227f9c7ae2e",
+        "DONE.json": "87a9aa384589d51a92ad4bb3db5ea97958453e38028d865f22ab509a4646ede8",
+        "evaluations.npz": "2ffcb366c7f9e9354717a9f10e1bebd9f7f95664750d257090d2574138f711c2",
+        "trace.json": "6f7da325cbdde0e0e84e8feb50291b4250f2e2093cd33eb7c4062de8a9803d79"
+      },
+      "independent_HV": 0.18321464412261865,
+      "HV_error": 2.7755575615628914e-17
+    },
+    {
+      "id": "ridge_1600_s1110_LMOCSO_problem",
+      "layouts_checked": 10000,
+      "feasible_layouts": 10000,
+      "unique_feasible_layouts": 5375,
+      "exact_front_matched": true,
+      "independent_geometry_passed": true,
+      "cost_identities_passed": true,
+      "hashes": {
+        "manifest.json": "d13208779f364990d04745f8f08ae4ff7a84f85ac5bb9dc51d5d14d1444b67db",
+        "DONE.json": "e6f36e4fff0ac862106e24ef98a5fa1abe437c4fc815fd2b1049f79a2619a12f",
+        "evaluations.npz": "4f52e6502387a1ce93f5ee20928abeea44e9d95564f8cebf0459c4c2cc830adf",
+        "trace.json": "248c84587874a1a9ab464172f0a1174f8456de30020655083a7e78c795d62d9f"
+      },
+      "independent_HV": 0.35799551875907487,
+      "HV_error": 0.0
+    },
+    {
+      "id": "ridge_1600_s1110_LMOCSO",
+      "layouts_checked": 10000,
+      "feasible_layouts": 10000,
+      "unique_feasible_layouts": 642,
+      "exact_front_matched": true,
+      "independent_geometry_passed": true,
+      "cost_identities_passed": true,
+      "hashes": {
+        "manifest.json": "72438df0949cf0beb5c68739f3840b6ee16abd9c8e4023845eb12b1f317fff21",
+        "DONE.json": "d82ebf487d06c487bd512428c4d311436335c6c24a6722fc19dc9623228ccdb1",
+        "evaluations.npz": "986fed006b60290dcf12943293ff68df6d371b426d0d853d7300e877366ce239",
+        "trace.json": "77dda78c2a1a1dfff7f4551a3360a681937342051e230af8cf1e13b7059c2c32"
+      },
+      "independent_HV": 0.06218931494962384,
+      "HV_error": 0.0
+    },
+    {
+      "id": "ridge_1600_s1110_DGEA_problem",
+      "layouts_checked": 10000,
+      "feasible_layouts": 10000,
+      "unique_feasible_layouts": 7124,
+      "exact_front_matched": true,
+      "independent_geometry_passed": true,
+      "cost_identities_passed": true,
+      "hashes": {
+        "manifest.json": "7e60e70db9e3aa1ec5f12785b2f10009f39a4e853bdd9927a4a16ae90471b84f",
+        "DONE.json": "e11c4cbfb6cc3f705b94db6742ab321b6992235e58118db8c831a8bd59e7be6d",
+        "evaluations.npz": "b714b268b32b245eb15195fe4d5a0c2d6593aa5c96553c49c9964961bc2fee57",
+        "trace.json": "6d5518f8c9228339472c1cee6c314a19b893235c9538c20334dd271737e70b50"
+      },
+      "independent_HV": 0.32135705645157275,
+      "HV_error": 5.551115123125783e-17
+    },
+    {
+      "id": "ridge_1600_s1110_DGEA",
+      "layouts_checked": 10000,
+      "feasible_layouts": 10000,
+      "unique_feasible_layouts": 7307,
+      "exact_front_matched": true,
+      "independent_geometry_passed": true,
+      "cost_identities_passed": true,
+      "hashes": {
+        "manifest.json": "f013400e05c526626120503b48d0fc1de28f919e408fe725912d0e4fe5c88dfc",
+        "DONE.json": "47303c44326498d33fc860e155352a6a97fba9727537703f82f495ed25243e4f",
+        "evaluations.npz": "cc7a8187986b796a11a4dd6449afc2049d46ce8a013f1968e177f5e00306a740",
+        "trace.json": "75a1eb1e7fa3c03d0b9a8dd0914e7c38828294dfc7c089894ddbd74e08ebc1af"
+      },
+      "independent_HV": 0.08220394398855979,
+      "HV_error": 1.3877787807814457e-17
+    }
+  ],
+  "methods": "Independent spacing/closed-mask geometry, cost identities, Fenwick nondomination and slab-integrated HV"
+}

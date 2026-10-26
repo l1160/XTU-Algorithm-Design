@@ -1,0 +1,147 @@
+{
+  "model_version": "v6.rotor-overlap-jensen",
+  "scenario": "obs_01",
+  "M": 1600,
+  "N": 400,
+  "xml_nominal_N": 400,
+  "installed_capacity_MW": 600.0,
+  "site_km2": 98.0,
+  "allowed_km2": 91.84,
+  "turbines_per_allowed_km2": 4.355400696864112,
+  "selection_fraction": 0.25,
+  "spacing_m": 308.0,
+  "conflict_pairs": 3132,
+  "feasible_certificate_size": 562,
+  "certificate_used_for_initialization_or_repair": false,
+  "candidates": {
+    "generator": "scrambled_Sobol_2D",
+    "seed": 20261012,
+    "raw_points_inspected": 1711,
+    "original_forbidden_filtered": 49,
+    "slope_filtered_after_site": 62,
+    "retained_points": 1600,
+    "installed_count_used": false,
+    "anchor_injection": false,
+    "terrain_sha256": "ec404abbb2bb419fc61b2d0468ab42d25061512812acd0b914188884d43fdf00"
+  },
+  "obstacles": [
+    [
+      3000.0,
+      4000.0,
+      4000.0,
+      6500.0
+    ],
+    [
+      6500.0,
+      13500.0,
+      7000.0,
+      14000.0
+    ]
+  ],
+  "station_m": [
+    3500.0,
+    0.0
+  ],
+  "reference_rooted_MST_m": 169002.9460635751,
+  "fixed_objective_scales": [
+    2788.367794811757,
+    34.1651485780524,
+    91.84
+  ],
+  "metric_columns": [
+    "aep_GWh_per_year",
+    "benchmark_lcoe_USD2022_per_MWh",
+    "effective_envelope_km2",
+    "terrain_surface_rooted_MST_m",
+    "gross_envelope_km2",
+    "excluded_envelope_km2",
+    "capex_USD2022",
+    "annual_cost_USD2022",
+    "electrical_capex_USD2022",
+    "reference_rooted_MST_m"
+  ],
+  "elevation": "Synthetic bilinear DEM supplied",
+  "area_definition": "effective development envelope, zero buffer, not foundation footprint",
+  "economic_parameters": {
+    "model_version": "v3.0",
+    "currency": "USD_2022",
+    "source": "NREL/PR-5000-88335, 2022 Cost of Wind Energy Review (2023), pp. 25, 27, 29, 30",
+    "source_url": "https://www.nlr.gov/docs/fy24osti/88335.pdf",
+    "reference_technology_rating_MW": 3.3,
+    "total_capex_per_kw": 1750.0,
+    "electrical_infrastructure_capex_per_kw": 64.0,
+    "annual_opex_per_kw": 41.0,
+    "real_fixed_charge_rate": 0.0673,
+    "source_lifetime_years": 25,
+    "source_real_wacc": 0.0397,
+    "source_real_capital_recovery_factor": 0.0638,
+    "source_net_aep_mwh_per_mw_year": 4100.0,
+    "layout_cost_rule": "C_cap = P_kW * (1750 - 64 + 64 * L_rooted_MST / L_reference)",
+    "reference_layout_rule": "Deterministic farthest-point selection on a 1.01*d_min grid inside the original XML allowed region; independent of candidate count M and algorithms",
+    "substation_rule": "Fixed at (Width/2, 0); scenario assumption, not supplied by WindFLO",
+    "nonwake_energy_multiplier": 1.0,
+    "parameter_transfer_status": "Research benchmark transfer from a 3.3 MW US land-based reference to WindFLO's 1.5 MW turbine, not site-calibrated pricing",
+    "explicit_assumptions": [
+      "Electrical infrastructure budget is scaled linearly by rooted geometric connection length; this scaling is our approximation, not the NREL cost model",
+      "The electrical budget is subtracted from total CAPEX before adding the layout-scaled term, avoiding double counting",
+      "FCR is used directly; do not multiply by CRF again",
+      "Reference financing assumes 25 years; reference source has taxes/depreciation, but these are not separately simulated here",
+      "No additional nonwake losses are asserted; AEP already includes the modeled wake loss",
+      "No electrical capacity, loss, voltage-drop, road-routing or terrain-engineering feasibility claim"
+    ]
+  },
+  "wake_scope": "Area-weighted rotor overlap Jensen, per-source mean deficit then RSS; fixed CT; not pointwise rotor quadrature or terrain flow",
+  "terrain": {
+    "source": "synthetic analytic terrain sampled on a regular DEM; not observed data",
+    "coordinate_system": "local Cartesian metres, no real geographic location or EPSG",
+    "kind": "ridge",
+    "generator_parameters": {
+      "base_m": 100.0,
+      "rolling_m": 40.0,
+      "ridge_m": 350.0
+    },
+    "formula": "100 + A*sin(2*pi*x/7000)*sin(2*pi*y/14000) + B*exp(-0.5*((u/600)^2+(v/2500)^2)); u,v are 25-degree rotated offsets from (3800,7600)",
+    "extent_m": [
+      0,
+      0,
+      7000,
+      14000
+    ],
+    "resolution_m": 50.0,
+    "node_shape": [
+      281,
+      141
+    ],
+    "minimum_height_m": 71.71021288125601,
+    "maximum_height_m": 452.8310241279627,
+    "maximum_cell_slope_deg": 19.721365073292382,
+    "slope_limit_deg": 15.0,
+    "slope_limit_status": "declared scenario assumption, not an engineering code or site approval threshold",
+    "excluded_slope_area_km2": 3.7225,
+    "slope_rule": "A cell is excluded if the maximum gradient magnitude of its bilinear DEM surface exceeds tan(limit).",
+    "sha256": "ec404abbb2bb419fc61b2d0468ab42d25061512812acd0b914188884d43fdf00"
+  },
+  "nominal_relative_hub_height_m": 80.0,
+  "wind_height_assumption": "WindFLO distributions imposed uniformly at turbine hubs; measured reference height is not supplied",
+  "connection_scope": "MST of DEM-surface lengths along straight horizontal routes; no routing or electrical feasibility claim",
+  "cost_anchor": "Same flat reference length as V4; not recalibrated to cancel terrain-induced length changes",
+  "surface_cache": {
+    "path": "D:\\suanfa\\github_public\\windfarm-layout-optimization\\windfarm_terrain_v5\\cache\\2801a8a6bbe325faad1154b9b2778207366371606942e07d790f20c9a44880c6.npy",
+    "order": 256,
+    "key": "2801a8a6bbe325faad1154b9b2778207366371606942e07d790f20c9a44880c6"
+  },
+  "kernel": {
+    "key": "a4ec3348ec214688f3806c511102da230cd32f1450974607d9d8294e0bb41df8",
+    "path": "D:\\suanfa\\github_public\\windfarm-layout-optimization\\windfarm_research_v6\\cache\\a4ec3348ec214688f3806c511102da230cd32f1450974607d9d8294e0bb41df8.npy",
+    "read_only": true,
+    "cache_existed_before_lock": false
+  },
+  "incremental_enabled": true,
+  "timing_scope": "Wall components can overlap (kernel setup inside energy); never sum them as disjoint pure CPU time",
+  "evaluation_backend": "v7 exact dense Prim; same complete graph and cost function",
+  "search_surrogate": "Frequency-weighted squared wake kernel guides proposals only; exact objectives determine selection",
+  "minimum_spacing_m": 308.0,
+  "rated_kw": 1500.0,
+  "candidate_count": 1600,
+  "turbine_count": 400
+}

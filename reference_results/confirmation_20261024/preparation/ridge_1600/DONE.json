@@ -1,0 +1,9 @@
+{
+  "status": "complete",
+  "case": "ridge_1600",
+  "wall_seconds": 9.080584800016368,
+  "geometry_sha256": "e480bbbb1fc67c0a60219b6cc9f5eda93ac7f48c64cbc09a12f4a39994d79532",
+  "feasible_certificate_size": 562,
+  "optimization_requests": 0,
+  "finished_at": "2026-10-24T15:03:37.263877+08:00"
+}

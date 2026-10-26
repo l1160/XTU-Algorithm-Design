@@ -1,0 +1,60 @@
+{
+  "status": "passed",
+  "tests": 16,
+  "failures": [],
+  "errors": [],
+  "finished_at": "2026-10-24T11:29:57.740252+08:00",
+  "scope": "Mathematical, operator, baseline-preservation, and restart checks only",
+  "performance_experiments": 0,
+  "baseline_repository_commit": "2e4436698a56985e6414985fde8bd27fc2081e77",
+  "source_sha256": {
+    "windfarm_research_v6/__init__.py": "f93fdf48eadd5f7bd4251df451e94c4af7806178d89d33a321fa020e83c5b8d6",
+    "windfarm_research_v6/compat.py": "2dbc27a0fe4924ceb521183bc884419f87aede0b065aa2a121fd1535fad8f383",
+    "windfarm_research_v6/engines.py": "59c278f6217b4e13ce9e07af5d5c4d72297aa3294b11861a958d97bc0ae71d7e",
+    "windfarm_research_v6/feasible.py": "2ae7c65a3d592a3131e1591a7bb3507e219a6f706d8fb6dd18cb19fcc3b34ecd",
+    "windfarm_research_v6/lifecycle.py": "7cf6f119c595a3ed88f5bc3b72588e5026ef3b99302e5176bc08dd26f4b94393",
+    "windfarm_research_v6/model.py": "52f39d9b399b4bcbacf3e3a3f6ef45a3e417fb68456533b3340bfea517611f5a",
+    "windfarm_research_v6/preflight.py": "2aaed4db7195a33572bd14642f8c42b452dc2c80adf645f043fddbb1e4db12a7",
+    "windfarm_research_v6/run.py": "586315aba55ae6db4accaf0638b3a90da7ea61f8569b4627224f4a0f033f8d40",
+    "windfarm_research_v6/wake.py": "af78ee02fb2f2cf826da6f89aa4d0051804c5a0cd5bf64224e2f7ef9c67e2a7b",
+    "windfarm_research_v6/worker.py": "68ea925201fe04409ccac8f19d92061903d1e2f73f1d5603c855f4b8b581a482",
+    "Start-V6.ps1": "5ad15f60573a84beef07e978219d65bf19eb561419144eaad5362dbaf9598f1d",
+    "windfarm_research_v6/config.example.json": "569606c3779e52ab800d57b91ff9bfc919e5ceda98adee36b531be98c1957867"
+  },
+  "python": [
+    3,
+    12,
+    4
+  ],
+  "packages": {
+    "numpy": "2.3.5",
+    "scipy": "1.16.3",
+    "shapely": "2.1.2",
+    "pymoo": "0.6.1.6"
+  },
+  "scheduled_task_exit_code": 0,
+  "original_manifest_files_checked": 169,
+  "original_manifest_files_changed": 0,
+  "functional_scales": [
+    [
+      32,
+      8
+    ],
+    [
+      64,
+      12
+    ],
+    [
+      128,
+      20
+    ]
+  ],
+  "largest_functional_engine_request_budget": 97,
+  "large_scale_performance_verified": false,
+  "live_evidence_directory": "verification/v6_check_20261024_c",
+  "limitations": [
+    "No formal comparison or speedup claim",
+    "No original MATLAB equivalence claim",
+    "Area-weighted Jensen remains a proxy, not pointwise rotor integration or calibrated terrain flow"
+  ]
+}

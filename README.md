@@ -1,106 +1,118 @@
 # 考虑位置禁布约束的大规模多目标风电场布局优化
 
-课程研究项目的源码、输入数据和复现入口，供小组成员分工运行和复核实验。
+在场界、禁布区、坡度和最小机间距约束下，从候选位置中选择400台风机，联合优化年发电量、度电成本和有效开发包络面积。项目包含 **CCGDE3、LMOCSO、DGEA三条基线及对应改进版**，以及已完成的180次正式对比实验。
 
-研究对象是在场界、禁布区和风机最小间距约束下，从候选位置中选择固定数量的风机，联合优化年发电量、布局相关度电成本和有效开发包络面积。当前正式对照为 **CCGDE3-inspired 适配版、LMOCSO、DGEA**；新实验入口不会启动 NSGA-III。
+当前模型采用转子圆盘重叠Jensen尾流、Weibull风速分布与非负功率积分、完整图最小生成树连接成本，以及凸包与允许开发区域的交集面积。六种方法共享同一模型和精确评价后端；CCGDE3为保留协同差分进化框架的Python适配版，高程采用合成DEM。
 
-## 包含什么
+## 报告与正式结果
 
-- `windflo_standard/data/Scenarios/`：WindFLO 的 20 个风况与场界场景，包括 10 个带矩形禁布区的场景；主实验使用 `obs_00` 和 `obs_01`。
-- `windfarm_terrain_v5/data/`：flat、rolling、ridge 三种**合成高程**，分别有 25、50、100 m 网格及 50 m 网格上的候选点。数据使用局部米制坐标，没有真实场址坐标或 EPSG。
-- `windfarm_study_v3/`：候选点、经济模型、约束修复和算法核心。
-- `windfarm_research_v4/model_v4.py`：修正后的平面尾流模型；运行应使用根目录入口，不应单独把 V3 基类当作最终模型。
-- `windfarm_terrain_v5/`：高程、坡度禁布、三维几何尾流和地表连线长度模型。
-- `windfarm_delivery/`：两组冻结实验的运行与统计代码。
-- `reference_results/`：已完成的 120 次正式实验的逐次/汇总统计、配对比较、收敛数据和代表布局。
+- [课题研究汇报书 Word版（含七人分工）](reports/课题研究汇报书.docx)
+- [性能均值与标准差](reference_results/confirmation_20261024/analysis/summary.csv)
+- [配对检验及Holm校正](reference_results/confirmation_20261024/analysis/primary_tests.csv)
+- [全部180次运行统计](reference_results/confirmation_20261024/analysis/all_runs.csv)
+- [原始评价记录、布局、轨迹、图表与核查材料](reference_results/confirmation_20261024/)
 
-公开仓库不包含个人账号凭据、进程日志、旧检查点、第三方依赖安装目录或报告/PPT。完整历史实验档案保留在项目负责人本机。旧兼容模块和参考 MATLAB 文件中的 NSGA 名称不代表当前研究基线；当前入口只接受下表两组计划。
+正式实验于2026年10月25日完成。每组使用10个新随机种子，每次10000次评价请求，初始100个布局配对一致。
 
-## 环境与安装
+| 算例 | 风况与地形 | 候选点数 | 风机数 |
+|---|---|---:|---:|
+| A | obs_00，平地 | 800 | 400 |
+| B | obs_00，平地 | 1600 | 400 |
+| C | obs_01，合成山脊 | 1600 | 400 |
 
-当前后台运行入口支持 **Windows 10/11、Python 3.12 x64、CPU**。Linux/macOS 尚未适配 Windows 文件锁及任务计划程序，请勿直接照搬 Windows 运行命令。
+下表为改进版HV均值相对各自基线的变化。HV衡量三目标解集质量，其增幅不是发电量增幅。
 
-在 PowerShell 中执行：
+| 算法 | A | B | C | 三个算例的配对胜出次数 |
+|---|---:|---:|---:|---|
+| CCGDE3改进版 | +15.71% | +4.75% | +4.02% | 9/10、8/10、6/10 |
+| LMOCSO改进版 | +108.11% | +210.65% | +401.93% | 10/10、10/10、10/10 |
+| DGEA改进版 | +93.37% | +169.93% | +282.35% | 10/10、10/10、10/10 |
+
+LMOCSO与DGEA改进版在相同请求数、相同CPU预算两种口径下均取得三个算例各10次配对全胜，对应Holm校正p值均为0.0352。CCGDE3改进版平均CPU时间减少22.30%–31.15%；其质量提升在A通过校正后的检验，在B、C未达到0.05阈值。
+
+跑满预算时，LMOCSO改进版CPU时间增加80.88%–132.38%，DGEA增加5.56%–10.31%；二者在相同CPU时间内仍取得更高质量。全部180万条评价记录通过几何约束核查，可行率100%。重复率方面，LMOCSO明显改善，CCGDE3增加，DGEA在A略降、在B和C增加。报告保留这些差异并分析原因。
+
+## 代码与证据
+
+| 路径 | 内容 |
+|---|---|
+| `windfarm_validation/` | 当前六方法统一入口、冻结计划、统计与独立核查 |
+| `windfarm_research_v6/` | 重叠尾流、可行投影、CCGDE3最终改进与完整续跑 |
+| `windfarm_research_v7/` | LMOCSO/DGEA最终改进、稀疏回写、物理局部交换、精确Prim |
+| `windfarm_study_v3/` | 基线核心、功率积分、经济模型与基础约束修复 |
+| `windfarm_terrain_v5/` | 合成高程、坡度过滤和地表连接长度 |
+| `windflo_standard/data/Scenarios/` | WindFLO风况、场界与禁布区 |
+| `reference_results/confirmation_20261024/` | 180份配置、完整评价记录、轨迹、前沿、统计图表与核查证据 |
+| `reports/` | 最新汇报书及版本说明 |
+
+当前统一入口使用 **V6的CC改进与V7的LM/DGEA改进**。V6早期LM/DGEA方案保留为历史代码，不用于本轮正式结果。早期120次地形与修复实验的入口见[历史复现说明](docs/legacy_reproduction.md)。
+
+每个正式运行均公开`evaluations.npz`、`trace.json`、`DONE.json`、`manifest.json`和`case_metadata.json`。Git不包含可再生缓存、大检查点、运行日志和依赖目录。原始证据中的历史路径原样保留；复现时使用下面的准备命令生成当前机器的路径。
+
+## 环境与文件核验
+
+后台入口支持Windows 10/11、Python 3.12 x64、CPU。正式实验使用Python 3.12.4，依赖版本固定在`requirements.txt`；无需GPU、神经网络权重或Codex。
+
+在PowerShell中执行，后续命令均以仓库根目录为工作目录：
 
 ```powershell
 git clone https://github.com/l1160/windfarm-layout-optimization.git
-cd windfarm-layout-optimization
+Set-Location windfarm-layout-optimization
 py -3.12 -m venv .venv
 .\.venv\Scripts\python.exe -m pip install -r requirements.txt
-.\.venv\Scripts\python.exe reproduce.py --campaign terrain --dry-run
-.\.venv\Scripts\python.exe reproduce.py --campaign repair --dry-run
+.\.venv\Scripts\python.exe verify_publication.py
 ```
 
-最后两条命令只核验代码、输入与计划，不启动优化。依赖安装需要联网；安装完成后实验不依赖网络或 Codex。首次地形实验会生成地表距离缓存，初始化可能比后续运行慢。四进程批量运行需要容纳多个 1600×1600×24 的尾流数组；内存有限时使用下面的单进程小组分工入口。
+最后一条命令只核对公开文件指纹、180份结果及报告版本，不执行优化。
 
-## 七人分工：每人只运行自己的一份
+## 后台复现
 
-全组使用同一个仓库提交版本。成员编号固定为 1–7，每人顺序运行分配到的任务，同时仅占用一个工作进程。编号不同的任务不重叠；每组 60 次实验分为 8–9 次/人。
-
-查看分配表，不运行实验：
+先准备并后台执行有界实现检查：
 
 ```powershell
-.\.venv\Scripts\python.exe team.py --campaign terrain --member 1 --members 7 --list
+.\.venv\Scripts\python.exe confirmation.py prepare-check
+.\Start-Validation.ps1 -Job .\verification\confirmation_public\check_job.json -Python .\.venv\Scripts\python.exe
+Get-Content .\verification\confirmation_public\DONE.json
 ```
 
-后台启动（成员 2–7 将 `-Member 1` 改为自己的编号）：
+确认检查的`status`为`passed`后，准备并启动180次正式比较：
 
 ```powershell
-powershell -NoProfile -ExecutionPolicy Bypass -File .\Start-TeamRun.ps1 -Campaign terrain -Member 1 -Members 7
+.\.venv\Scripts\python.exe confirmation.py prepare
+.\Start-Validation.ps1 -Job .\reproduced\confirmation_public\campaign_job.json -Python .\.venv\Scripts\python.exe
+.\Read-Validation.ps1 -Output .\reproduced\confirmation_public -Follow
 ```
 
-这一组完成后，再运行修复消融：
+准备命令只生成配置。输入为仓库内的场景、经济参数与地形代码；配置位于`reproduced/confirmation_public/configs/`，评价记录与检查点位于`runs/`，统计与图表位于`analysis/`。单工作进程顺序执行，避免同时争抢CPU影响计时。
+
+启动后应看到本次新日志，以及`progress.json`中的请求数、更新时间实际增加。完整完成要求根目录`DONE.json`包含`runs: 180`、`independent_audits_passed: true`，且`analysis/DONE.json`存在。
+
+重复执行相同启动命令会防止重复进程、跳过完成项，并从未完成项的完整`last.pkl`续跑，保留原日志。源码、配置或环境改变时拒绝继续原目录。暂停时在批次根目录创建内容为`{}`的`PAUSE_REQUEST.json`；明确恢复时移除该标记，再执行同一启动命令。不要删除检查点后重新开始。
+
+关闭查看日志的终端不会停止已启动的后台任务。电脑需保持开机；关机或注销可能中断运行，下次按相同命令续跑。
+
+## 只重建保存结果的统计与图表
 
 ```powershell
-powershell -NoProfile -ExecutionPolicy Bypass -File .\Start-TeamRun.ps1 -Campaign repair -Member 1 -Members 7
+.\Start-ConfirmationAnalysis.ps1 -Python .\.venv\Scripts\python.exe
+Get-ChildItem .\reproduced\confirmation_reanalysis -Filter 'analysis_*.log' |
+    Sort-Object LastWriteTime -Descending | Select-Object -First 1 |
+    Get-Content -Tail 20 -Wait
 ```
 
-任务由 Windows 任务计划程序启动，使用隐藏的 Python 进程、独立日志和重复启动锁。成功运行后关闭查看日志的终端或 Codex、断网不会停止实验；**关机、睡眠或注销可能中断运行**，请保持电脑开机并避免睡眠。重新执行同一命令会跳过完成项并从自己的完整 `last.pkl` 继续，保留原日志；不要删除检查点后重新开始。不要加载他人提供的未知 pickle 文件。
+此任务读取`reference_results/confirmation_20261024/`，在`reproduced/confirmation_reanalysis/`输出统计、图表及原方案的目标一致性复核，不增加优化运行。新目录的`DONE.json`是完成标志。后台任务同样有重复启动保护，保留已有输出和日志。
 
-查看状态与日志：
+## 模型和比较规则
 
-```powershell
-Get-Content .\reproduced\terrain\team_1_of_7.json
-Get-ChildItem .\reproduced\terrain -Recurse -Filter progress.json | ForEach-Object { Get-Content $_.FullName }
-$latestLog = Get-ChildItem .\reproduced\terrain -Recurse -Filter 'worker_*.log' | Sort-Object LastWriteTime -Descending | Select-Object -First 1
-Get-Content -LiteralPath $latestLog.FullName -Tail 20 -Wait
-```
+位置使用随机键表示，约束和重复判定作用于真实机位集合。所有局部交换的精确评价均计入预算，缓存命中也计一次请求。最终前沿统一由全部已访问的可行布局重建。
 
-应看到**本次新日志**及 `progress.json` 中 `requests`、`updated_at` 更新。只有任务状态或 PID 不能说明优化正在推进。成员完成标志是 `team_编号_of_7.json` 的 `status: complete`；单次实验完成标志为该目录的 `DONE.json`。启动前失败的详细信息在 `.background/` 的新日志中。按 Ctrl+C 退出日志查看不会结束后台任务。
+每个算例的60次运行共享HV归一化范围，参考点为`[1.1,1.1,1.1]`，不跨算例直接比较HV绝对值。每组采用10个配对种子，执行精确双侧符号翻转检验，对18项主要比较统一Holm校正。
 
-暂停：在相应 `reproduced/terrain/` 或 `reproduced/repair/` 创建内容为 `{}` 的 `PAUSE_REQUEST.json`，工作进程将在保存完整检查点后退出；恢复前移除此标记，再运行原启动命令。不要在运行中修改源码、预算、种子或输入。
+高程通过坡度禁布、轮毂高差和地表连接长度进入模型；环境风况按扇区给定。度电成本采用参考技术参数及连接长度缩放。模型公式、参数和实际布局的工程取舍见汇报书。
 
-## 汇总组员结果
+## 来源与引用
 
-成员提交自己 `reproduced/terrain/` 和 `reproduced/repair/` 下的实验子目录，其中至少保留 `DONE.json`、`evaluations.npz`、`trace.json`、`case_metadata.json`。已完成实验不需要传输检查点。请通过网盘或共享磁盘交付，不要把大检查点提交进 Git。
-
-负责人将同一提交版本产生的实验子目录合并到自己相应的 `reproduced/` 目录，遇到同名任务先核对来源，不要覆盖。每组应有 60 个不同任务目录。然后运行完整入口：它跳过已完成任务，补齐缺项并生成整体统计；如果 60 次均已完成，只进行汇总。
-
-```powershell
-powershell -NoProfile -ExecutionPolicy Bypass -File .\Start-Reproduction.ps1 -Python .\.venv\Scripts\python.exe -Campaign terrain
-powershell -NoProfile -ExecutionPolicy Bypass -File .\Start-Reproduction.ps1 -Python .\.venv\Scripts\python.exe -Campaign repair
-```
-
-完整入口默认每组最多四个并行 CPU 工作进程，内存不足时请先完成七人分工再汇总，避免在一台机器同时启动两组完整实验。完整成功标志为 `reproduced/<campaign>/DONE.json` 和 `analysis/` 统计表。比较结果前核对所有成员使用相同 Git 提交、依赖版本与配置；不要把不一致的模型结果混合计算 HV。
-
-## 冻结的实验设置
-
-| 实验 | 场景与规模 | 算法/处理 | 随机种子 | 预算 |
-|---|---|---|---|---|
-| terrain | obs_00/01，ridge，1600 候选点、400 台风机 | CCwake_base、LM_base、DGEA_base | 801–810 | 每次 10,000 请求，共 60 次 |
-| repair | obs_01，平面，1600 候选点、400 台风机 | LMOCSO/DGEA × 无修复、贪心修复、有界回溯 | 601–610 | 每次 10,000 请求，共 60 次 |
-
-初始种群为 100，配对方案共享初始布局，初始化计入预算。M 表示候选点/随机键维数，不是已安装风机数量。经济目标采用参考成本参数与布局相关连接长度，不能解释为真实场址报价。高程扩展只包含几何效应，未模拟复杂地形风速增益或完整流场；地表 MST 也不是施工可行的电缆路径设计。
-
-评价包括可行率、AEP、LCOE、有效开发包络面积、Pareto 集、HV、收敛和重复布局诊断。HV 在同一案例内共同归一化，参考点为 `[1.1,1.1,1.1]`，可能大于 1，**不是百分数**，不可直接跨场景比较。统计使用配对符号翻转检验和预先指定比较族的 Holm 校正。
-
-已完成结果中 ridge 两风况的平均 HV 排序为 CCwake > DGEA > LMOCSO；修复消融中贪心修复改善两算法结果，而本组测试的回溯分支未被触发。这些结论仅针对本模型、适配实现和预算。CCGDE3-inspired 与原始 MATLAB 实现存在分组、协作上下文及预算计数差异，不宣称严格复现原算法。
-
-## 来源与使用说明
-
-- WindFLO 数据及参考实现来自 [d9w/WindFLO](https://github.com/d9w/WindFLO)，具体来源记录在 `windflo_standard/data/SOURCE.json`，MIT 声明保留在 `windflo_standard/reference/LICENSE`。
-- 算法参考 [BIMK/PlatEMO](https://github.com/BIMK/PlatEMO)，固定来源提交和引用见 `windfarm_study_v3/reference/SOURCE.json`、`ATTRIBUTION.txt` 及各 `.m` 文件原始声明。Python 为面向本约束随机键问题的适配实现，未做完整 MATLAB 运行等价验证。
-- 使用 PlatEMO 相关代码的研究成果应按原声明致谢并引用 Tian、Cheng、Zhang、Jin (2017)，以及所用算法原始论文。第三方代码继续遵循各自声明，本仓库没有把它们重新授权为 MIT。
-- 合成 DEM 的生成公式见 `windfarm_terrain_v5/terrain.py`；不能将这些数据称为实测高程。
-
-代码出现问题时提交 Issue，并附 Python 版本、Git 提交号、实验名称以及错误日志片段；不要上传密码或访问令牌。
+- WindFLO来自[d9w/WindFLO](https://github.com/d9w/WindFLO)，来源与MIT声明见`windflo_standard/data/SOURCE.json`和`windflo_standard/reference/LICENSE`。
+- 算法参考[BIMK/PlatEMO](https://github.com/BIMK/PlatEMO)，固定提交和原声明见`windfarm_study_v3/reference/`。研究使用应引用PlatEMO与CCGDE3、LMOCSO、DGEA原始论文。
+- 成本参数依据NREL《2022 Cost of Wind Energy Review》，具体参数和本项目的缩放规则见`windfarm_study_v3/economics.json`。
+- 第三方代码沿用其原声明，本仓库未将第三方代码统一重新授权为MIT。

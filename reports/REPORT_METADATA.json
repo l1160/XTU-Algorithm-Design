@@ -1,0 +1,22 @@
+{
+  "repository_path": "reports/课题研究汇报书.docx",
+  "sha256": "a18c9f6e802a0c28ab13a4ca3d689470706e6bc7ab7310e19be714c6c30500a7",
+  "pages": 20,
+  "updated_at": "2026-10-26T11:44:33.947020+08:00",
+  "members": 7,
+  "member_labels": [
+    "成员1",
+    "成员2",
+    "成员3",
+    "成员4",
+    "成员5",
+    "成员6",
+    "成员7"
+  ],
+  "amendment": "补写七人分工表，保留用户已保存的正文与参考文献",
+  "user_revision_sha256": "109db56da0576990c8a156af77c853ffa1c90c95283275ad6eab85f1f21fff1e",
+  "visual_review_passed": true,
+  "previous_body_unchanged": true,
+  "experiment_runs": 180,
+  "experiment_finished_at": "2026-10-25T02:42:44.663576+08:00"
+}
