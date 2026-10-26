@@ -6,7 +6,7 @@
 
 ## 报告与正式结果
 
-- [课题研究汇报书 Word版（含七人分工）](reports/课题研究汇报书.docx)
+- [课题研究汇报书 Word版](reports/课题研究汇报书.docx)
 - [性能均值与标准差](reference_results/confirmation_20261024/analysis/summary.csv)
 - [配对检验及Holm校正](reference_results/confirmation_20261024/analysis/primary_tests.csv)
 - [全部180次运行统计](reference_results/confirmation_20261024/analysis/all_runs.csv)
