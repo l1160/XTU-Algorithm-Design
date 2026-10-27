@@ -12,7 +12,7 @@
 - [全部180次运行统计](reference_results/confirmation_20261024/analysis/all_runs.csv)
 - [原始评价记录、布局、轨迹、图表与核查材料](reference_results/confirmation_20261024/)
 
-正式实验于2026年10月25日完成。每组使用10个新随机种子，每次10000次评价请求，初始100个布局配对一致。
+每组使用10个新随机种子，每次10000次评价请求，初始100个布局配对一致。
 
 | 算例 | 风况与地形 | 候选点数 | 风机数 |
 |---|---|---:|---:|
@@ -28,9 +28,9 @@
 | LMOCSO改进版 | +108.11% | +210.65% | +401.93% | 10/10、10/10、10/10 |
 | DGEA改进版 | +93.37% | +169.93% | +282.35% | 10/10、10/10、10/10 |
 
-LMOCSO与DGEA改进版在相同请求数、相同CPU预算两种口径下均取得三个算例各10次配对全胜，对应Holm校正p值均为0.0352。CCGDE3改进版平均CPU时间减少22.30%–31.15%；其质量提升在A通过校正后的检验，在B、C未达到0.05阈值。
+LMOCSO与DGEA改进版在相同请求数、相同预算两种口径下均取得三个算例各10次配对全胜，对应Holm校正p值均为0.0352。CCGDE3改进版平均时间减少22.30%–31.15%；其质量提升在A通过校正后的检验，在B、C未达到0.05阈值。
 
-跑满预算时，LMOCSO改进版CPU时间增加80.88%–132.38%，DGEA增加5.56%–10.31%；二者在相同CPU时间内仍取得更高质量。全部180万条评价记录通过几何约束核查，可行率100%。重复率方面，LMOCSO明显改善，CCGDE3增加，DGEA在A略降、在B和C增加。报告保留这些差异并分析原因。
+跑满预算时，LMOCSO改进版时间增加80.88%–132.38%，DGEA增加5.56%–10.31%；二者在相同时间内仍取得更高质量。全部180万条评价记录通过几何约束核查，可行率100%。重复率方面，LMOCSO明显改善，CCGDE3增加，DGEA在A略降、在B和C增加。报告保留这些差异并分析原因。
 
 ## 代码与证据
 
@@ -47,11 +47,11 @@ LMOCSO与DGEA改进版在相同请求数、相同CPU预算两种口径下均取�
 
 当前统一入口使用 **V6的CC改进与V7的LM/DGEA改进**。V6早期LM/DGEA方案保留为历史代码，不用于本轮正式结果。早期120次地形与修复实验的入口见[历史复现说明](docs/legacy_reproduction.md)。
 
-每个正式运行均公开`evaluations.npz`、`trace.json`、`DONE.json`、`manifest.json`和`case_metadata.json`。Git不包含可再生缓存、大检查点、运行日志和依赖目录。原始证据中的历史路径原样保留；复现时使用下面的准备命令生成当前机器的路径。
+每个正式运行均公开`evaluations.npz`、`trace.json`、`DONE.json`、`manifest.json`和`case_metadata.json`。原始证据中的历史路径原样保留；复现时使用下面的准备命令生成当前机器的路径。
 
 ## 环境与文件核验
 
-后台入口支持Windows 10/11、Python 3.12 x64、CPU。正式实验使用Python 3.12.4，依赖版本固定在`requirements.txt`；无需GPU、神经网络权重或Codex。
+后台入口支持Windows 10/11、Python 3.12 x64。正式实验使用Python 3.12.4，依赖版本固定在`requirements.txt`
 
 在PowerShell中执行，后续命令均以仓库根目录为工作目录：
 
@@ -83,13 +83,11 @@ Get-Content .\verification\confirmation_public\DONE.json
 .\Read-Validation.ps1 -Output .\reproduced\confirmation_public -Follow
 ```
 
-准备命令只生成配置。输入为仓库内的场景、经济参数与地形代码；配置位于`reproduced/confirmation_public/configs/`，评价记录与检查点位于`runs/`，统计与图表位于`analysis/`。单工作进程顺序执行，避免同时争抢CPU影响计时。
+准备命令只生成配置。输入为仓库内的场景、经济参数与地形代码；配置位于`reproduced/confirmation_public/configs/`，评价记录与检查点位于`runs/`，统计与图表位于`analysis/`。
 
 启动后应看到本次新日志，以及`progress.json`中的请求数、更新时间实际增加。完整完成要求根目录`DONE.json`包含`runs: 180`、`independent_audits_passed: true`，且`analysis/DONE.json`存在。
 
 重复执行相同启动命令会防止重复进程、跳过完成项，并从未完成项的完整`last.pkl`续跑，保留原日志。源码、配置或环境改变时拒绝继续原目录。暂停时在批次根目录创建内容为`{}`的`PAUSE_REQUEST.json`；明确恢复时移除该标记，再执行同一启动命令。不要删除检查点后重新开始。
-
-关闭查看日志的终端不会停止已启动的后台任务。电脑需保持开机；关机或注销可能中断运行，下次按相同命令续跑。
 
 ## 只重建保存结果的统计与图表
 
