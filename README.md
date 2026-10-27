@@ -7,6 +7,7 @@
 ## 报告与正式结果
 
 - [课题研究汇报书 Word版](reports/课题研究汇报书.docx)
+- [成员汇报准备手册 Word版](reports/课题成员汇报准备手册.docx)
 - [性能均值与标准差](reference_results/confirmation_20261024/analysis/summary.csv)
 - [配对检验及Holm校正](reference_results/confirmation_20261024/analysis/primary_tests.csv)
 - [全部180次运行统计](reference_results/confirmation_20261024/analysis/all_runs.csv)
@@ -57,7 +58,7 @@ LMOCSO与DGEA改进版在相同请求数、相同预算两种口径下均取得�
 
 ```powershell
 git clone https://github.com/l1160/XTU-Algorithm-Design.git
-Set-Location windfarm-layout-optimization
+Set-Location XTU-Algorithm-Design
 py -3.12 -m venv .venv
 .\.venv\Scripts\python.exe -m pip install -r requirements.txt
 .\.venv\Scripts\python.exe verify_publication.py

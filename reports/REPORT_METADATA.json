@@ -1,22 +1,66 @@
 {
   "repository_path": "reports/课题研究汇报书.docx",
-  "sha256": "a18c9f6e802a0c28ab13a4ca3d689470706e6bc7ab7310e19be714c6c30500a7",
+  "sha256": "a9bca4496ed348c220723b6115a345a6f7015bd65bf778df09e34480a8feed24",
   "pages": 20,
-  "updated_at": "2026-10-26T11:44:33.947020+08:00",
+  "updated_at": "2026-10-27T12:03:57.480424+08:00",
   "members": 7,
   "member_labels": [
-    "成员1",
-    "成员2",
-    "成员3",
-    "成员4",
-    "成员5",
-    "成员6",
-    "成员7"
+    "钟磊",
+    "吕明杰",
+    "杨霁铭",
+    "金凡竣",
+    "李传震",
+    "文子晗",
+    "唐林枫"
   ],
-  "amendment": "补写七人分工表，保留用户已保存的正文与参考文献",
-  "user_revision_sha256": "109db56da0576990c8a156af77c853ffa1c90c95283275ad6eab85f1f21fff1e",
+  "member_roles": [
+    {
+      "name": "钟磊",
+      "role": "课题统筹与汇报",
+      "tasks": "梳理研究目标与技术路线；协调模型、算法和实验接口；汇总研究结论，负责报告统稿与成果讲解。",
+      "deliverable": "总体方案、研究汇报书"
+    },
+    {
+      "name": "吕明杰",
+      "role": "场景数据与约束",
+      "tasks": "整理风况、禁布区和地形数据；生成候选机位；建立固定风机数量、场界、最小间距及坡度约束。",
+      "deliverable": "算例数据、候选集与冲突图"
+    },
+    {
+      "name": "杨霁铭",
+      "role": "尾流与三目标模型",
+      "tasks": "实现转子重叠尾流和年发电量计算；建立连接成本、度电成本及有效面积指标；核对单位与数值一致性。",
+      "deliverable": "统一评价器、模型公式与核查结果"
+    },
+    {
+      "name": "金凡竣",
+      "role": "CCGDE3算法改进",
+      "tasks": "实现协同差分进化基线；设计可行协作上下文、组外机位固定和跨组交换；分析增量评价及计算效率。",
+      "deliverable": "CCGDE3基线、改进模块与机制分析"
+    },
+    {
+      "name": "李传震",
+      "role": "LMOCSO算法改进",
+      "tasks": "实现竞争群优化基线；改进稀疏回写、速度保留和有效种群维持；结合物理交换分析重复率与解集质量。",
+      "deliverable": "LMOCSO基线、改进模块与机制分析"
+    },
+    {
+      "name": "文子晗",
+      "role": "DGEA算法改进",
+      "tasks": "实现方向引导基线；保留预选择及父代等级，改进方向搜索和可行局部交换；分析档案更新与搜索表现。",
+      "deliverable": "DGEA基线、改进模块与机制分析"
+    },
+    {
+      "name": "唐林枫",
+      "role": "实验统计与可视化",
+      "tasks": "组织六种方法的配对比较并汇总180次运行；计算HV、耗时、可行率、重复率及统计检验；绘制结果图表。",
+      "deliverable": "对比统计表、收敛图、布局图与结果分析"
+    }
+  ],
+  "amendment": "上传用户2026年10月27日保存的汇报书 按确认将DGEA岗位姓名更正为文子晗",
+  "user_revision_sha256": "bcc7081edd6a9ac7fa156ebd14891dc7dba3a403579128d58644cf11a16ae487",
   "visual_review_passed": true,
-  "previous_body_unchanged": true,
+  "body_matches_user_source_except_member_name": true,
   "experiment_runs": 180,
   "experiment_finished_at": "2026-10-25T02:42:44.663576+08:00"
 }
