@@ -56,7 +56,7 @@ LMOCSO与DGEA改进版在相同请求数、相同预算两种口径下均取得�
 在PowerShell中执行，后续命令均以仓库根目录为工作目录：
 
 ```powershell
-git clone https://github.com/l1160/windfarm-layout-optimization.git
+git clone https://github.com/l1160/XTU-Algorithm-Design.git
 Set-Location windfarm-layout-optimization
 py -3.12 -m venv .venv
 .\.venv\Scripts\python.exe -m pip install -r requirements.txt
