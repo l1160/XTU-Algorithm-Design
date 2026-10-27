@@ -113,4 +113,3 @@ Get-ChildItem .\reproduced\confirmation_reanalysis -Filter 'analysis_*.log' |
 - WindFLO来自[d9w/WindFLO](https://github.com/d9w/WindFLO)，来源与MIT声明见`windflo_standard/data/SOURCE.json`和`windflo_standard/reference/LICENSE`。
 - 算法参考[BIMK/PlatEMO](https://github.com/BIMK/PlatEMO)，固定提交和原声明见`windfarm_study_v3/reference/`。研究使用应引用PlatEMO与CCGDE3、LMOCSO、DGEA原始论文。
 - 成本参数依据NREL《2022 Cost of Wind Energy Review》，具体参数和本项目的缩放规则见`windfarm_study_v3/economics.json`。
-- 第三方代码沿用其原声明，本仓库未将第三方代码统一重新授权为MIT。
