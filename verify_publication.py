@@ -58,14 +58,14 @@ def verify():
         labels=metadata['member_labels']
         assert len(labels)==metadata['members']==7 and len(set(labels))==7
         assert all(label in text for label in labels)
-    handbook=read(ROOT/'reports/HANDBOOK_METADATA.json')
-    assert sha(ROOT/handbook['repository_path'])==handbook['sha256']
-    assert handbook['member_labels']==metadata['member_labels']
+    member_work=read(ROOT/'reports/MEMBER_WORK_METADATA.json')
+    assert sha(ROOT/member_work['repository_path'])==member_work['sha256']
+    assert member_work['member_labels']==metadata['member_labels']
     return dict(status='passed',finished_at=datetime.datetime.now().astimezone().isoformat(),
         manifest_files=len(manifest),frozen_source_fingerprints_matched=True,complete_runs=180,
         original_audit_hashes_matched=True,geometry_records_in_verified_original_audits=geometry,
         report_sha256=metadata['sha256'],report_members=7,report_pages=metadata['pages'],
-        handbook_sha256=handbook['sha256'],handbook_pages=handbook['pages'],
+        member_work_sha256=member_work['sha256'],member_work_pages=member_work['pages'],
         optimization_runs_started=0,
         scope='Published bytes and saved audit evidence verified; no new model evaluation or performance experiment')
 

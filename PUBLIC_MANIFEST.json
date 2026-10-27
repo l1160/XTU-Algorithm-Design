@@ -9,7 +9,7 @@
   },
   {
     "path": "README.md",
-    "sha256": "011546b8b0d1e35a95669278a138ca120d12a850ad7410143508954fed34f18e"
+    "sha256": "a6dfd32977836ce7573ee9439e5ed9e358566fde54407da3b713b431eec96164"
   },
   {
     "path": "Read-V6Comparison.ps1",
@@ -6120,20 +6120,20 @@
     "sha256": "d2ba0d974c72537a235db07eebe162f4ec33d1a695f9ea765b223d6047ba6d02"
   },
   {
-    "path": "reports/HANDBOOK_METADATA.json",
-    "sha256": "5fabfc2433c636f5e0a385aec3be0b848fc41b6ac20412dce1dc13909eee3ae4"
+    "path": "reports/MEMBER_WORK_METADATA.json",
+    "sha256": "ff0b82b87690c1ad4e59041cc22da9ace930555e7149ec0f1e04dd6194f2813a"
   },
   {
     "path": "reports/README.md",
-    "sha256": "018959029b1dbea65b69ce27cc3adcf9921c3e0cc57cc639db5f2484481927d7"
+    "sha256": "6bd29d8bc8e78fd23453a59176570d3a38d462af9b685f9d261734923093227a"
   },
   {
     "path": "reports/REPORT_METADATA.json",
     "sha256": "dea36ab769ebb2f3446724088e2797a2518fd6ecc3a078d4f6197efa78b900da"
   },
   {
-    "path": "reports/课题成员汇报准备手册.docx",
-    "sha256": "79de2b08428b96dc293a94fcb76bc68c5526da86bd0fe3c12283e1afec1e7e9b"
+    "path": "reports/课题成员工作说明.docx",
+    "sha256": "dc4af567a275b3b88574a4dd55194e1e4191bad311971d74db978d713124e628"
   },
   {
     "path": "reports/课题研究汇报书.docx",
@@ -6177,7 +6177,7 @@
   },
   {
     "path": "verify_publication.py",
-    "sha256": "309197bee57775f3376bb9857cbb871fdef9019cec4c070a81c017be02638c10"
+    "sha256": "2b355621ddf320d14d5ab1cb78467f68a3cb95dc5f23045694831887fc77f55e"
   },
   {
     "path": "windfarm_delivery/campaign_figures.py",

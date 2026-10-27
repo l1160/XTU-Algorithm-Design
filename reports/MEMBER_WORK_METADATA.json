@@ -1,0 +1,41 @@
+{
+  "repository_path": "reports/课题成员工作说明.docx",
+  "sha256": "dc4af567a275b3b88574a4dd55194e1e4191bad311971d74db978d713124e628",
+  "pages": 10,
+  "updated_at": "2026-10-27T12:29:08.904453+08:00",
+  "members": 7,
+  "member_labels": [
+    "钟磊",
+    "吕明杰",
+    "杨霁铭",
+    "金凡竣",
+    "李传震",
+    "文子晗",
+    "唐林枫"
+  ],
+  "member_pages": {
+    "钟磊": 3,
+    "吕明杰": 4,
+    "杨霁铭": 5,
+    "金凡竣": 6,
+    "李传震": 7,
+    "文子晗": 8,
+    "唐林枫": 9
+  },
+  "audience": "小组成员",
+  "presentation_by": "钟磊",
+  "purpose": "了解各自分工对应的工作内容 要解决的问题 方法原因与完成结果",
+  "contents": [
+    "项目整体流程与基础概念",
+    "七位成员的具体工作",
+    "问题与方法之间的关系",
+    "完成结果与实际数字",
+    "模块衔接与成果入口"
+  ],
+  "source_report_sha256": "a9bca4496ed348c220723b6115a345a6f7015bd65bf778df09e34480a8feed24",
+  "experiment_runs": 180,
+  "new_experiments": 0,
+  "visual_review_passed": true,
+  "numerical_sources_verified": true,
+  "supersedes": "reports/课题成员汇报准备手册.docx"
+}
